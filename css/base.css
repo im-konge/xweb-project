@@ -1,0 +1,83 @@
+/* Logo */
+.logo .logo-img {
+    max-width: 100%;
+    max-height: 74px;
+}
+
+.logo {
+    float: left;
+    font-size: 45px;
+    margin-right: 10%;
+}
+
+.logo b {
+    font-weight: 900;
+}
+
+/* The navigation menu */
+.navbar {
+  font-family: Roboto;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.navbar .logo a .sub-navbar{
+    display: inline-block;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.sub-navbar {
+  float: left;
+  overflow: hidden;
+}
+
+.sub-navbar .sub-navbar-btn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 3px;
+    background-color: inherit;
+    font-family: inherit;
+    display: inline-block;
+    margin: 0;
+  }
+
+.sub-navbar-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+}
+
+.sub-navbar-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  float: none;
+}
+
+.sub-navbar-content a:hover {
+  background-color: #ea5822ff;
+  color: white;
+}
+
+.sub-navbar:hover .sub-navbar-content {
+  display: block;
+}
+
+.subtitle {
+    font-family: 'Hind';
+    color: #ea5822ff;
+}
