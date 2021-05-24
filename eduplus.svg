@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="359.65402"
-     inkscape:cy="850.82266"
+     inkscape:cx="111.08259"
+     inkscape:cy="679.39409"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -112,7 +112,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -121,7 +121,8 @@
      inkscape:groupmode="layer"
      id="layer1">
     <g
-       id="g85">
+       id="g85"
+       transform="translate(-6.8035714,-59.342262)">
       <path
          inkscape:connector-curvature="0"
          id="path45"
@@ -148,6 +149,39 @@
            id="rect49"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="ccccc" />
+      </g>
+    </g>
+    <g
+       id="g48"
+       inkscape:export-filename="/home/lkral/School/xweb-project/pics/eduplus-logo-dark-bg.png"
+       inkscape:export-xdpi="378.59201"
+       inkscape:export-ydpi="378.59201">
+      <path
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 63.122022,173.40179 40.443448,15.49702 40.06547,-15.49702 v 33.2619 l -40.06547,15.68602 -40.443448,-15.68602 z"
+         id="path26"
+         inkscape:connector-curvature="0" />
+      <path
+         style="fill:#ea5822;fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 39.687498,155.63691 63.877972,25.89137 63.68899,-25.89137 -63.68899,-25.5134 z"
+         id="path28"
+         inkscape:connector-curvature="0" />
+      <g
+         id="g34"
+         transform="translate(-5.2916666,63.348809)">
+        <rect
+           y="97.239578"
+           x="57.962646"
+           height="48.947918"
+           width="2.4568453"
+           id="rect30"
+           style="fill:#ea5822;fill-opacity:1;stroke:#ea5822;stroke-width:0.26458332;stroke-opacity:1" />
+        <path
+           sodipodi:nodetypes="ccccc"
+           inkscape:connector-curvature="0"
+           id="path32"
+           d="m 50.497619,153.55805 c 5.884832,-10.54756 11.680252,-10.52218 17.386904,0 v 17.57589 H 50.497619 Z"
+           style="fill:#ea5822;fill-opacity:1;stroke:none;stroke-width:0.26458332" />
       </g>
     </g>
   </g>
