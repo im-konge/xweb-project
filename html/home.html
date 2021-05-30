@@ -9,74 +9,53 @@
     <link rel="shortcut icon" href="/pics/eduplus-logo.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/base.css">
 </head>
 <body>
     <script src="https://kit.fontawesome.com/239fe5ee7d.js" crossorigin="anonymous"></script>
 
-    <!-- navbar -->
-    <div class="navbar">
-        <div class="logo">
+    <nav class="navbar navbar-expand-lg" style="background-color: transparent;">
+        <a class="navbar-brand">    
             <img class="logo-img" src="/pics/eduplus-logo.png" />
-            <div class="logo-text">
-                <b>Edu</b>Plus
-            </div>
+            <b class="boldness-900">Edu</b>Plus
+        </a>
+        
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact</a></li>
+            </ul>
         </div>
-        <div class="sub-navbar">
-            <a href="home.html">
-                <button class="sub-navbar-btn">Home <i class="fas fa-chevron-down"></i></button>
+
+        <div class="navbar-social navbar-right">
+            <a href="https://www.facebook.com/">
+                <div class="icon-square">
+                    <i class="icon icon-navbar fab fa-facebook-f"></i>
+                </div>
             </a>
-            <div class="sub-navbar-content">
-                <a href="#course-categories">Course Categories</a>
-                <a href="#available-courses">Available Courses</a>
-                <a href="#campus-gallery">Campus Gallery</a>
-                <a href="#expert-instructors">Expert Instructors</a>
-                <a href="#upcoming-events">Upcoming events</a>
-                <a href="#students-feedback">What our students say</a>
-                <a href="#build-a-career">Become an Instructor</a>
-                <a href="#news-and-blog">Latest News & Blog</a>
-            </div>
-        </div>
-        <div class="sub-navbar">
-            <a href="courses.html">
-                <button class="sub-navbar-btn">Courses <i class="fas fa-chevron-down"></i></button>
+            <a href="https://www.youtube.com/" style="text-decoration: none;">
+                <div class="icon-square">
+                    <i class="icon icon-navbar fab fa-youtube"></i>
+                </div>
             </a>
-            <div class="sub-navbar-content">
-                <a></a>
-                <a></a>
-                <a></a>
+            <div class="icon-rectangle">
+                <i class="icon icon-navbar far fa-user-circle"></i>
+                <b class="icon-text boldness-900">SIGN IN</b>
             </div>
         </div>
-        <div class="sub-navbar">
-            <a href="events.html">
-                <button class="sub-navbar-btn">Events <i class="fas fa-chevron-down"></i></button>
-            </a>
-            <div class="sub-navbar-content">
-                <a></a>
-                <a></a>
-                <a></a>
-            </div>
-        </div>
-        <a href="about.html">About us</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact-us.html">Contact</a>
-        <div class="navbar-social">
-            <i class="navbar-facebook fab fa-facebook-f"></i>
-            <i class="navbar-youtube fab fa-youtube"></i>
-            <div class="navbar-sign-in">
-                <i class="far fa-user-circle"></i>
-                Sign in
-            </div>
-        </div>
-    </div>
-    <!-- end of navbar -->
+    </nav>
 
     <!-- top -->
     <div>
         <div class="subtitle">
-            <img src="/pics/dots.png"></i>
-            Welcome To EduPlus
+            <div class="title-squares"></div>
+            <div class="title-squares"></div>
+            <div class="title-squares"></div>
+            <b class="boldness-700">Welcome To EduPlus</b>
         </div>
         <h1>
             More than 1200<br>
@@ -219,46 +198,97 @@
         <!--TODO: news and blog generator from JSON files -->
     </div>
 
-    <!-- sponsors? -->
-    <div>
-        <!-- sponsors from folder-->
+    <div class="sponsors-bar">
+        <div class="block sponsors-items">
+            <img src="/pics/sponsors/01.png"/>        
+            <img src="/pics/sponsors/04.png"/>        
+            <img src="/pics/sponsors/05.png"/>        
+            <img src="/pics/sponsors/02.png"/>        
+            <img src="/pics/sponsors/03.png"/>        
+        </div>
     </div>
 
-    <div class="footer">
-        <footer>
-            <div class="logo">
-                <img class="logo-img" src="/pics/eduplus-logo-dark-bg.png" />
-                <div class="logo-text">
-                    <b>Edu</b>Plus
+    <footer>
+        <section class="footer-logo-section footer-border-bottom block">
+            <div class="footer-logo footer-social-padding" style="display: inline-block;">
+                <a class="logo-dark-bg footer-social-padding" href="home.html">    
+                    <img class="logo-img" src="/pics/eduplus-logo-dark-bg.png" />
+                    <b class="boldness-900">Edu</b>Plus
+                </a>
+            </div>
+            <div class="display-table footer-social footer-social-padding">
+                <a class="boldness-600 footer-social-item-padding footer-social-item" href="https://www.facebook.com/">
+                    <span class="fa-stack fa-1x">
+                        <i class="footer-fb fa fa-circle fa-stack-2x"></i>
+                        <i class="icon-footer fab fa-facebook-f fa-stack-1x"></i>
+                    </span>
+                    Facebook
+                </a>
+                <a class="boldness-600 footer-social-item-padding footer-social-item" href="https://www.twitter.com/">
+                    <span class="fa-stack fa-1x">
+                        <i class="footer-twitter fa fa-circle fa-stack-2x"></i>
+                        <i class="icon-footer fab fa-twitter fa-stack-1x"></i>
+                    </span>
+                    Twitter
+                </a>
+                <a class="boldness-600 footer-social-item-padding footer-social-item" href="https://www.youtube.com/">
+                    <span class="fa-stack fa-1x">
+                        <i class="footer-yt fa fa-circle fa-stack-2x"></i>
+                        <i class="icon-footer fab fa-youtube fa-stack-1x"></i>
+                    </span>
+                    Youtube
+                </a>
+                <a class="boldness-600 footer-social-item-padding footer-social-item" href="https://www.instagram.com/">
+                    <span class="fa-stack fa-1x">
+                        <i class="footer-ig fa fa-circle fa-stack-2x"></i>
+                        <i class="icon-footer fab fa-instagram fa-stack-1x"></i>
+                    </span>
+                    Instagram
+                </a>
+            </div>
+        </section>
+        
+        <button class="footer-button-up"><i class="fas fa-chevron-up"></i></button>
+
+        <section class="block">
+            <div class="row mar-top">
+                <div class="column-flex-1 mar-sides-auto mar-bottom">
+                    <h6 class="footer-heading">Our Courses</h6>
+                    <p class="footer-item"><i class="fas fa-circle"></i><a>Web Development</a></p>
+                    <p class="footer-item"><i class="fas fa-circle"></i><a>Business Studies</a></p>
+                    <p class="footer-item"><i class="fas fa-circle"></i><a>Computer Engineering</a></p>
+                    <p class="footer-item"><i class="fas fa-circle"></i><a>English Learning</a></p>
+                    <p class="footer-item"><i class="fas fa-circle"></i><a>Graphics Design</a></p>
+                    <p class="footer-item"><i class="fas fa-circle"></i><a>Color Combinations</a></p>
+                    <p class="footer-item"><i class="fas fa-circle"></i><a>Software Development</a></p>
+                    <p class="footer-item"><i class="fas fa-circle"></i><a>Photography</a></p>
+                    <p class="footer-item"><i class="fas fa-circle"></i><a>Advance WordPress</a></p>
+                    <p class="footer-item"><i class="fas fa-circle"></i><a>Graphics Design</a></p>
+                </div>
+                <div class="column-flex-1 mar-sides-auto mar-bottom">
+                    <h6 class="footer-heading">Company</h6>
+                    <p class="footer-item"><i class="fas fa-circle"></i><a>About EduPlus</a></p>
+                    <p class="footer-item"><i class="fas fa-circle"></i><a>Instructors</a></p>
+                    <p class="footer-item"><i class="fas fa-circle"></i><a>Career</a></p>
+                    <p class="footer-item"><i class="fas fa-circle"></i><a>Courses</a></p>
+                </div>
+                <div class="column-flex-2 mar-sides-auto mar-bottom">
+                    <h6 class="footer-heading">Newsletters</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut accusantium minima iusto sequi.</p>
+                    <form class="footer-input" action="">
+                        <input type="email" placeholder="Enter your email"/>
+                        <button type="submit"><i class="fas fa-angle-right"></i></button>
+                    </form>
                 </div>
             </div>
-            <div>
-                <i>Facebook</i>
-                <i>Twitter</i>
-                <i>Youtube</i>
-                <i>Instagram</i>
+        </section>
+
+        <section class="block">
+            <div class="footer-copyright">
+                Copyright @ 2021 <a href="home.html">EduPlus</a>. All Rights Reserved.</p>
             </div>
-            <div>
-                <h6>Our Courses</h6>
-                <!-- for each course again <a> tag -->
-            </div>
-            <div>
-                <h6>Company</h6>
-                <a>About EduPlus</a>
-                <a>Instructors</a>
-                <a>Career</a>
-                <a>Courses</a>
-            </div>
-            <div>
-                <h6>Newsletters</h6>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ut accusantium minima iusto sequi. Hic facilis ipsum mollitia nobis repellat incidunt, sit, assumenda quidem unde quibusdam atque omnis optio ab.</p>
-                <input type="email">
-            </div>
-            <div>
-                <p class="copyright-text">Copyright @2021 <a href="home.html">EduPlus</a>. All Rights Reserved.</p>
-            </div>
-        </footer>
-    </div>
+        </section>
+    </footer>
     <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 </body>
 </html>
