@@ -21,7 +21,7 @@
             <b class="boldness-900">Edu</b>Plus
         </a>
         
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse justify-content-center">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
@@ -50,46 +50,128 @@
         </div>
     </nav>
 
-    <!-- top -->
-    <div>
-        <h1>Contact us</h1>
-        <p>Home > Contact us</p>
+    <div class="page-top-info">
+        <div class="block">
+            <h1>Contact Us</h1>
+            <p>Home <i class="fas fa-angle-right"></i> Contact Us</p>
+        </div>
     </div>
 
-    <div>
-        <div>
-            <div>
-                <div class="subtitle">
-                    <img src="/pics/dots.png"></i>
-                    Contact us
-                </div>
+    <div class="page-content">
+        <div class="block">
+            <div style="width: 30%; display: inline-block; left: 0; right: auto; margin-top: 4rem;">
+                <span class="subtitle">
+                    <span class="title-squares"></span>
+                    <span class="title-squares"></span>
+                    <span class="title-squares"></span>
+                    <b class="boldness-500">Contact Us</b>
+                </span> 
                 <h2>Get in Touch</h2>
-                <p>text</p>
-                <div>
-                    <i>Location</i>
-                    <i>email</i>
-                    <i>phone</i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, laborum incidunt placeat doloribus magni assumenda error quae exercitationem praesentium recusandae modi earum magnam esse officiis aliquam. Culpa tenetur doloremque veniam.</p>
+                <div class="contact-part" style=" border-bottom: 1px solid #dedede;">
+                    <div>
+                        <span class="fa-stack icon-content-contact">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-map-marker-alt fa-stack-1x inner-icon-content-contact"></i>
+                        </span>
+                        <div style="display: inline-block;">
+                            <h6>Location</h6>
+                            <p>250 Main Street, New York</p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="fa-stack icon-content-contact">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-envelope-open fa-stack-1x inner-icon-content-contact"></i>
+                        </span>
+                        <div style="display: inline-block;">
+                            <h6>E-mail</h6>
+                            <p>support@eduplus.com</p>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="fa-stack icon-content-contact">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-phone fa-stack-1x inner-icon-content-contact"></i>
+                        </span>
+                        <div style="display: inline-block;">
+                            <h6>Phone</h6>
+                            <p>+012 (345) 678 999</p>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <i>fb</i>
-                    <i>twitter</i>
-                    <i>yt</i>
-                    <i>linkedin</i>
+                <div class="mar-top">
+                    <a class="contact-social" href="https://www.facebook.com/">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x contact-social-circle"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x contact-social-icon"></i>
+                        </span>
+                    </a>
+                    <a class="contact-social" href="https://www.twitter.com/">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x contact-social-circle"></i>
+                            <i class="fab fa-twitter fa-stack-1x contact-social-icon"></i>
+                        </span>
+                    </a>
+                    <a class="contact-social" href="https://www.youtube.com/">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x contact-social-circle"></i>
+                            <i class="fab fa-youtube fa-stack-1x contact-social-icon"></i>
+                        </span>
+                    </a>
+                    <a class="contact-social" href="https://www.linkedin.com/">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x contact-social-circle"></i>
+                            <i class="fab fa-linkedin fa-stack-1x contact-social-icon"></i>
+                        </span>
+                    </a>
                 </div>
             </div>
-            <div>
-                map
+            <div style="width: 50%; display: inline-block; margin-left: 5%;">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=250%20Main%20street,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
+                    </div>
+                </div>
             </div>
         </div>
-        <div>
+        <div class="block"  style="width: 100%; display: block; margin-top: 4rem; text-align: center;">
             <div class="subtitle">
-                <img src="/pics/dots.png"></i>
-                Get in Touch
-                <img src="/pics/dots.png"></i>
+                <span class="subtitle">
+                    <span class="title-squares"></span>
+                    <span class="title-squares"></span>
+                    <span class="title-squares"></span>
+                    <b class="boldness-500">Get In Touch</b>
+                    <span class="title-squares"></span>
+                    <span class="title-squares"></span>
+                    <span class="title-squares"></span>
+                </span> 
             </div>
-            <h3>Leave us Message</h3>
-            form
+            <h2>Leave Us Message</h2>
+            <form class="contact-form">
+                <div class="row">
+                    <div class="column-flex-2">
+                        <input type="text" placeholder="Full Name"/>
+                    </div class="col">
+                    <div class="column-flex-2">
+                        <input type="email" placeholder="Email Address"/>
+                    </div>
+                    <div class="column-flex-2">
+                        <input type="tel" placeholder="Phone Number"/><br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column-flex-3">
+                        <textarea type="text" placeholder="Write Message"></textarea>
+                    </div>
+                </div>
+                <button type="submit">SEND MESSAGE</button>
+            </form>
         </div>
+        <br>
+        <br>
+        <br>
     </div>
 
     <div class="sponsors-bar">
@@ -182,6 +264,7 @@
                 Copyright @ 2021 <a href="home.html">EduPlus</a>. All Rights Reserved.</p>
             </div>
         </section>
+        <br>
     </footer>
     <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 </body>
