@@ -21,7 +21,7 @@
             <b class="boldness-900">Edu</b>Plus
         </a>
         
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse justify-content-center">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
@@ -50,44 +50,148 @@
         </div>
     </nav>
 
-    <!-- top -->
-    <div>
-        <h1>Event Details</h1>
-        <p>Home > Event Details</p>
+    <div class="page-top-info">
+        <div class="block">
+            <h1>Event Details</h1>
+            <p>Home <i class="fas fa-angle-right"></i> Event Details</p>
+        </div>
     </div>
 
-    <!-- event -->
-    <div>
-        <h3>event name</h3>
-        <div>
-            <i>date</i>
-            <i>time</i>
-            <i>location</i>
-            <i>building</i>
-        </div>
-        <div>
+    <div class="page-content">
+        <div class="block" style="border-bottom: 1px solid #dedede;">
+            <br>
+            <br>
+            
+            <h3 style="margin-top: 0;">Annual Conference 2021</h3>
             <div>
-                price
+                <div class="event-info" style="display: inline-block; width: 60%;">
+                    <span>
+                        <i class="far fa-calendar-alt event-icon"></i>25 November 2021
+                    </span>
+                    <span>
+                        <i class="far fa-clock event-icon"></i>Sat - Friday, 08 am - 09 am
+                    </span>
+                    <span>
+                        <i class="fas fa-map-marker-alt event-icon"></i>250 Main Street, USA
+                    </span>
+                    <span>    
+                        <i class="fas fa-home event-icon"></i>New York Museum
+                    </span>
+                </div>
+                <div style="display: inline-block; width: 30%;">
+                    <div class="price">$20</div>
+                    <button class="join-event-button">JOIN EVENT <i class="fas fa-angle-right"></i></button>
+                </div>
             </div>
-            <button>
-                join event ->
-            </button>
+            <div>
+                <p class="event-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suscipit condimentum consequat. 
+                    Suspendisse semper justo in odio imperdiet, a scelerisque quam ultricies. Aliquam gravida massa sed diam volutpat tempus. 
+                    Duis dignissim quam sit amet mattis accumsan. Cras sed semper quam. Phasellus dictum fringilla erat. Morbi interdum id elit quis fermentum. 
+                    Ut gravida felis eros, id commodo massa hendrerit vel. In ornare nec eros porta ullamcorper. Cras tincidunt sagittis eleifend.
+                </p>
+                <img style="text-align: center; max-width: 100%; height: auto;" src="/pics/event.jpg">
+                <p class="event-description">
+                    Morbi blandit odio eu interdum vestibulum. Donec eget libero quam. Vestibulum pulvinar turpis non urna semper suscipit. 
+                    Proin felis metus, efficitur quis ornare non, mattis in risus. Suspendisse aliquam pharetra orci vel malesuada. 
+                    Morbi ut sapien maximus, consectetur justo quis, tincidunt odio. Ut vitae rhoncus mi. 
+                    Proin consectetur dolor in nibh placerat pellentesque. Mauris at tincidunt velit, eget feugiat mi. Nulla et rhoncus nulla. 
+                    Integer at massa sit amet augue blandit pretium malesuada in sapien. Curabitur ac ante ac odio aliquam semper sit amet gravida nisi. 
+                    Donec non nisl nisi. Aenean sed placerat est.
+                </p>
+            </div>
+            <div class="content-flex">
+                <div>
+                    <h3>Importance of Event</h3>
+                    <p class="event-description">
+                        Nam a condimentum dui, at commodo ipsum. Maecenas in fermentum est. Duis tincidunt leo vel varius lacinia. 
+                        Donec tincidunt volutpat risus non finibus. Aenean dapibus, orci ut ullamcorper sollicitudin, 
+                        velit ipsum dapibus lorem, et scelerisque dui arcu et nisl. Maecenas nec convallis erat. 
+                        Donec luctus tortor id eros fermentum, id porttitor erat pharetra. Quisque ac tellus ultrices, pellentesque metus mattis, elementum mauris. 
+                        Praesent hendrerit tempus nunc, et vehicula nulla tincidunt eget.
+                    </p>
+                    <ul class="circle-checks">
+                        <li><i class="fas fa-check"></i>Creating Secure Password Flows With NodeJS And MySQL</li>
+                        <li><i class="fas fa-check"></i>Make Honest Design Work For Digital Business With Ethical Design</li>
+                        <li><i class="fas fa-check"></i>Building An E-Commerce Site With October CMS Shopaholic</li>
+                        <li><i class="fas fa-check"></i>Smashing Podcast Episode 11 With Eduardo Bouças What Is Sourcebit?</li>
+                        <li><i class="fas fa-check"></i>Avoid Keyboard Event-Related Bugs Browser-Based Transliteration</li>
+                    </ul>
+                </div>
+                <div style="width: 30%; display: inline-block;">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe class="resp-iframe" width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=250%20Main%20street,%20New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
         </div>
-        <p>description</p>
-        <div>
-            <h3>Importance of Event</h3>
-            <p>desc</p>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        <div class="block">
+            <div class="row">
+                <div class="event-card">
+                    <div class="event-card-img-cover">
+                        <img src="/pics/event-1.jpg">
+                    </div>
+                    <div class="event-card-desc">
+                        <div class="card-price">$20</div>
+                        <div class="event-info mar-top-12">
+                            <span>
+                                <i class="far fa-calendar-alt event-icon"></i>25 NOV 2021
+                            </span>
+                            <span>
+                                <i class="far fa-clock event-icon"></i>08 AM - 09 AM
+                            </span>
+                        </div>
+                        <h4>Annual Conference 2021</h4>
+                        JOIN EVENT <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+                
+                <div class="event-card">
+                    <div class="event-card-img-cover">
+                        <img src="/pics/event-1.jpg">
+                    </div>
+                    <div class="event-card-desc">
+                        <div class="card-price">$20</div>
+                        <div class="event-info mar-top-12">
+                            <span>
+                                <i class="far fa-calendar-alt event-icon"></i>25 NOV 2021
+                            </span>
+                            <span>
+                                <i class="far fa-clock event-icon"></i>08 AM - 09 AM
+                            </span>
+                        </div>
+                        <h4>Annual Conference 2021</h4>
+                        JOIN EVENT <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-card-img-cover">
+                        <img src="/pics/event-1.jpg">
+                    </div>
+                    <div class="event-card-desc">
+                        <div class="card-price">$20</div>
+                        <div class="event-info mar-top-12">
+                            <span>
+                                <i class="far fa-calendar-alt event-icon"></i>25 NOV 2021
+                            </span>
+                            <span>
+                                <i class="far fa-clock event-icon"></i>08 AM - 09 AM
+                            </span>
+                        </div>
+                        <h4>Annual Conference 2021</h4>
+                        JOIN EVENT <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div>
-        another conferences generator
-    </div>
 
     <div class="sponsors-bar">
         <div class="block sponsors-items">
