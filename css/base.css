@@ -67,7 +67,11 @@ a {
 
 .mar-top {
   margin-top: 1rem !important;
-}instructor-course-stats
+}
+
+.mar-top-5 {
+  margin-top: 5% !important;
+}
 
 .mar-bottom {
   margin-bottom: 1rem !important;
@@ -1208,4 +1212,116 @@ form.home-top-input button {
 
 .orange-bg-color {
   background-color: #ea5822ff;
+}
+
+.lessons-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #ebebeb;
+  border-bottom: 0;
+}
+
+.lessons-list li {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 1rem 0 1rem 2rem;
+  border-bottom: 1px solid #ebebeb;
+  color: #062a35;
+  font-family: 'Roboto';
+  font-weight: 900;
+}
+
+.lessons-list li:hover {
+  background-color: #eaf4f7;
+}
+
+.lessons-list i {
+  margin-right: 1rem;
+}
+
+.lessons-list p {
+  width: 20%;
+  margin: 0;
+  float: right;
+}
+
+.course-detail > .accordion,
+.course-detail > .panel {
+  width: 100%;
+}
+
+.course-detail > button,
+.course-detail > .panel {
+  margin-left: 0;
+}
+
+.course-instructors > .instructor-course-profile-pic {
+  width: 150px;
+  height: 150px;
+  float: none;
+  margin-top: 20%;
+}
+
+.course-instructors {
+  text-align: center;
+  border: 1px solid #ebebeb;
+}
+
+.course-instructors p {
+  margin: 0;
+  padding-bottom: 3rem;
+  font-size: 0.8rem;
+}
+
+.course-instructors h4 {
+  margin-bottom: 0;
+}
+
+.course-info-list {
+  list-style-type: none;
+  margin: 0;
+  border: 1px solid #ebebeb;
+  padding: 2rem;
+}
+
+.course-info-list li {
+  padding: 1rem;
+  border-bottom: 1px solid #eaeaea;
+  color: #062a35;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+.course-info-list li:last-of-type {
+  border-bottom: 0;
+}
+
+.course-info-list button {
+  width: 80%;
+  height: 40px;
+  margin-top: 5%;
+  margin-left: 10%;
+  text-transform: uppercase;
+  border: none;
+  background-color: #3662ff;
+  color: white;
+  border-radius: 20px;
+  font-weight: 900;
+  font-family: 'Roboto';
+  font-size: 0.8rem;
+}
+
+.course-info-list p {
+  margin: 0;
+  float: right;
+  color: #ea5822ff;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+.course-info-list i {
+  color: #ea5822ff;
+  margin-right: 0.5rem;
 }
