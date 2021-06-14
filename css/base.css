@@ -71,6 +71,10 @@ button {
   font-size: 42px;
 }
 
+.mar-0 {
+  margin: 0 !important;
+}
+
 .mar-top {
   margin-top: 1rem !important;
 }
@@ -144,6 +148,11 @@ button {
 .column-flex-25 {
   flex: 0 0 auto;
   width: 25%;
+}
+
+.column-flex-45 {
+  flex: 0 0 auto;
+  width: 45%;
 }
 
 .column-flex-50 {
@@ -1169,6 +1178,10 @@ form.home-top-input button {
   color: white !important;
 }
 
+.blue-color {
+  color: #3561ff !important;
+}
+
 .instructor-course-image {
   position: relative; 
   color: white;
@@ -1935,4 +1948,17 @@ form.home-top-input button {
   font-weight: 400;
   font-size: 1rem;
   color: #708389;
+}
+
+.orange-border-top {
+  border-top: 3px solid #ea5822ff;
+}
+
+.orange-border-left {
+  border-left: 3px solid #ea5822ff;
+}
+
+.about-info:last-of-type {
+  border-top: 2px solid #e4e4e4;
+  margin-bottom: 3rem;
 }
