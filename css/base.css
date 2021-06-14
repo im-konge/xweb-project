@@ -1248,6 +1248,10 @@ form.home-top-input button {
   background-color: #4581ff; 
 }
 
+.blue-card-bg-color {
+  background-color: #3662ff;
+}
+
 .orange-bg-color {
   background-color: #ea5822ff;
 }
@@ -1948,6 +1952,10 @@ form.home-top-input button {
   font-weight: 400;
   font-size: 1rem;
   color: #708389;
+}
+
+.gray-border-complete {
+  border: 1px solid #e2e2e2;
 }
 
 .orange-border-top {
