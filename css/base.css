@@ -2,6 +2,7 @@
 
 html {
   font-size: 15px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,8 +16,13 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 a {
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 .block {
@@ -73,6 +79,10 @@ a {
   margin-top: 5% !important;
 }
 
+.mar-top-12 {
+  margin-top: 12rem !important;
+}
+
 .mar-bottom {
   margin-bottom: 1rem !important;
 }
@@ -124,6 +134,11 @@ a {
 .column-flex-4 {
   flex: 0 0 auto;
   width: 100%;
+}
+
+.column-flex-20 {
+  flex: 0 0 auto;
+  width: 20%;
 }
 
 .column-flex-25 {
@@ -564,12 +579,14 @@ form.footer-input button {
   color: #ea5822ff !important;
   font-weight: 900;
   font-size: 32px;
-  margin: 0;
   text-align: center;
+  margin-top: calc(50%-47px);
+  margin-bottom: 0;
 }
 
 .info-box p {
   text-align: center;
+  margin: 0;
 }
 
 .home-page-top {
@@ -1148,6 +1165,10 @@ form.home-top-input button {
   color: #ea5822ff !important;
 }
 
+.white-color {
+  color: white !important;
+}
+
 .instructor-course-image {
   position: relative; 
   color: white;
@@ -1206,12 +1227,32 @@ form.home-top-input button {
   display: inline-block; 
 }
 
+.display-block {
+  display: block !important;
+}
+
 .blue-bg-color {
   background-color: #4581ff; 
 }
 
 .orange-bg-color {
   background-color: #ea5822ff;
+}
+
+.white-bg-color {
+  background-color: white !important;
+}
+
+.dark-cyan-bg-color {
+  background-color: #052935 !important;
+}
+
+.light-cyan-bg-color {
+  background-color: #e9f3f7 !important;
+}
+
+.dark-gray-bg-color {
+  background-color: #2b2b2b !important;
 }
 
 .lessons-list {
@@ -1324,4 +1365,574 @@ form.home-top-input button {
 .course-info-list i {
   color: #ea5822ff;
   margin-right: 0.5rem;
+}
+
+.navbar-main-page {
+  font-family: Roboto;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.info-box-line {
+  margin-top: -66px;
+  text-align: center;
+}
+
+.text-align-center {
+  text-align: center !important;
+}
+
+.course-bottom {
+  text-align: left !important;
+  padding: 1rem;
+}
+
+.course-bottom p,
+.course-bottom h4 {
+  margin: 0.5rem;
+}
+
+.course-bottom h4 {
+  font-size: 1.4444467rem;
+  font-family: 'Roboto';
+  font-weight: 900;
+  color: #062a35;
+}
+
+.course-bottom p {
+  font-family: 'Hind';
+  font-weight: 500;
+}
+
+.course-stats {
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: #708389;
+}
+.course-stats i {
+  margin-left: 0.5rem;
+}
+
+.padding-0 {
+  padding: 0 !important;
+}
+
+.padding-3-top-bottom {
+  padding: 3rem 0 3rem 0 !important;
+}
+
+.card {
+  height: 460px;
+  background-color: transparent;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.card-back-content {
+  margin: 2rem;
+}
+
+.card-back * {
+  color: white;
+}
+
+.card-back .course-name {
+  font-size: 1.466666667rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.card-back p {
+  color: white !important;
+  margin: 1rem 0 1rem 0;
+}
+
+.card-back button {
+  border: 2px solid white;
+  height: 3rem;
+  width: 10rem;
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-weight: 900;
+}
+
+.card-back button:hover {
+  background-color: white;
+  color: #ea5822ff;
+}
+
+.card-back button:hover i {
+  color: #ea5822ff;
+}
+
+.card-back button > i {
+  margin-left: 0.5rem;
+  color: white;
+}
+
+.card-back .instructor-course-stats i:first-of-type {
+  margin-left: 0;
+}
+.card-back .instructor-course-stats i:not(:first-of-type) {
+  margin-left: 5% !important;
+}
+
+.courses-button {
+  background-color: transparent;
+  border: 2px solid #113642;
+  padding: 1rem 3rem 1rem 3rem;
+  color: #417b8d;
+  font-family: 'Roboto';
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.courses-button:hover {
+  background-color: #113642;
+}
+
+.gallery {
+  margin-top: 2rem;
+  margin-left: 20%;
+}
+
+.gallery img {
+  object-fit: cover;
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 5%;
+  display: block;
+}
+
+.image-content {
+  position: relative;
+}
+
+.image-content:hover .pic-overlay {
+  opacity: 1;
+}
+
+.category-button {
+  padding-bottom: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: 'Roboto';
+  font-weight: 900;
+  color: #062a35;
+}
+
+.category-button:hover {
+  border-bottom: 2px solid #ea5822ff;
+}
+
+.category-active {
+  color: #ea5822ff;
+  border-bottom: 2px solid #ea5822ff;
+}
+
+.gallery-column {
+  flex: 0 0 auto;
+  width: 25%;
+  display: none;
+}
+
+.pic-overlay {
+  position: absolute;
+  width: 100%;
+  height: 15rem;
+  background-color: rgba(5, 41, 53, 0.9);
+  opacity: 0;
+  transition: 0.6s;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.pic-overlay h4 {
+  font-size: 1.433367rem;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+
+.pic-overlay p {
+  font-family: 'Hind';
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.pic-overlay h4, 
+.pic-overlay p {
+  color: white !important;
+  margin: 1rem 0 0 1rem;
+}
+
+.pic-overlay button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  background-color: #ea5822ff;
+  color: white;
+  cursor: pointer;
+  margin-top: 35%;
+  margin-right: 5%;
+  float: right;
+}
+
+.dropup-button {
+  position: relative;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #ea5722ff;
+  color: white !important;
+  bottom: 1.8rem;
+  float: right;
+  cursor: pointer;
+  right: 1.5rem;
+}
+
+.dropup {
+  position: relative;
+}
+
+.dropup:hover {
+  background-color: white;
+  color: #ea5822ff !important;
+}
+
+.dropup:hover .dropup-content {
+  display: block !important;
+}
+
+.dropup-content {
+  display: none !important;
+  float: right;
+  bottom: 12.45rem;
+  right: 0;
+  left: 1rem;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.dropup-content a {
+  display: block;
+  background-color: white;
+  padding: 5px 0 5px 0;
+  }
+
+.dropup-content a:hover {
+  background-color: #eaeaea;
+}
+
+.column-flex-2 .event-card:first-of-type {
+  margin-top: 0;
+}
+
+.column-flex-2 .event-card:last-of-type {
+  margin-bottom: 0;
+}
+
+.column-flex-2 .event-card {
+  width: 100% !important;
+}
+
+.event-card-big-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.column-flex-50 .card-price {
+  margin: 0;
+  margin-left: 35rem;
+  margin-top: -2.5rem;
+}
+
+.event-big {
+  margin: 2rem;
+}
+
+.event-big h4 {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+
+.classic-button {
+  background-color: #ea5822ff;
+  border: 0;
+  text-transform: uppercase;
+  color: white;
+  padding: 1rem 2rem 1rem 2rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.classic-button:hover {
+  background-color: white;
+  color: #ea5822ff !important;
+}
+
+.events-button {
+  background-color: transparent;
+  border: 2px solid #eaeaea;
+  padding: 1rem 3rem 1rem 3rem;
+  color: #113642;
+  font-family: 'Roboto';
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  cursor: pointer
+}
+
+.events-button:hover {
+  background-color: #eaeaea;
+}
+
+.white-button {
+  background-color: white;
+  color: #062a35;
+}
+
+.career-box h4,
+.career-box h2 {
+  margin: 0;
+}
+
+.career-box h4 {
+  font-size: 1.4667rem;
+  color: #062a35;
+}
+
+.career-box div{
+  margin-bottom: 2rem;
+}
+
+.blog-author-image {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
+}
+
+.blog-author p {
+  display: inline-block;
+  color: #ea5822ff;
+  margin: 0;
+  line-height: 25px;
+  vertical-align: top;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+  font-weight: 500;
+}
+
+.blog-bottom h4 {
+  font-size: 1.2rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.blog-bottom {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.blog-bottom button {
+  background-color: #052935;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  display: block;
+  float: right;
+}
+
+.blog-bottom button:hover {
+  background-color: #ea5822ff;
+}
+
+.blog-stats i {
+  color: #ea5822ff;
+}
+
+.blog-stats i:first-of-type {
+  margin-right:0.5rem;
+}
+
+.blog-stats i:last-of-type {
+  margin-right: 0.2rem;
+  margin-left: 1rem;
+}
+
+.blog-stats {
+  font-family: 'Hind';
+  font-weight: 700;
+  color: #708389;
+  margin: 0;
+}
+
+.blogs {
+  margin-left: 12.5%;
+}
+
+.blogs .column-flex-25 {
+  margin-right: 5%;
+}
+
+.feedback-container {
+  width: 500px;
+  height: 600px;
+  position: relative;
+}
+
+.feedback-overlay {
+  margin: 1.5rem 0 0 1.5rem;
+  background-color: white !important;
+  position: absolute;
+  z-index: 2;
+}
+
+.feedback-block {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #e9f3f7;
+  position: absolute;
+}
+
+.feedback-content {
+  margin: 4rem;
+  display: none;
+}
+
+.feedback-block::after {
+  box-shadow: 0px 0 100px rgba(255, 0, 0, 1);
+}
+
+.navigation-button {
+  width: 40px;
+  height: 40px;
+  background-color: #e9f3f7;
+  color: #062a35;
+  border: none;
+}
+
+.navigation-button:hover {
+  background-color: #ea5822ff;
+  color: white;
+}
+
+.fa-quote-left {
+  font-size: 10rem;
+  float: right;
+  position: relative;
+  bottom: 4rem;
+  color: #ea5822ff;
+}
+
+.feedback-navigation {
+  width: 40%;
+  display: inline-block;
+}
+
+.feedback-main-text {
+  font-family: 'Hind' !important;
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+  color: #062a35 !important;
+}
+
+.feedback-author {
+  display: block;
+  width: 80%;
+  margin-bottom: 5rem;
+}
+
+.feedback-author-text {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 25px;
+  margin-left: 1rem;
+}
+
+.feedback-author-text h4,
+.feedback-author-text p {
+  margin: 0;
+}
+
+.feedback-pics-grid img {
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.feedback-pic-active {
+  border: 2px solid #ea5822ff;
+}
+
+.support {
+  margin-left: 2rem;
+}
+
+.support i {
+  font-size: 3rem;
+  color: #ea5822ff;
+}
+
+.support p,
+.support h4 {
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.support p {
+  text-transform: uppercase;
+  font-weight: 700 !important;
+}
+
+.support h4 {
+  color: #062a35;
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 1.3333rem;
+}
+
+.home-page-top p {
+  font-family: 'Hind';
+  font-weight: 400;
+  font-size: 1rem;
+  color: #708389;
 }
