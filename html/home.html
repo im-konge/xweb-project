@@ -52,7 +52,7 @@
             </div>
         </nav>
 
-        <div class="block">
+        <div class="block mar-top-12">
             <div class="subtitle">
                 <div class="subtitle-squares orange-color">
                     <i class="fas fa-square-full"></i>
@@ -71,10 +71,18 @@
                 <input type="search" placeholder="Search Courses"/>
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            <i></i>
-            Online support
-            +012 (345) 6789
+            <div class="column-flex-1 display-inline-block">
+                <p style="border-right: 3px solid #ea5822ff;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <div class="column-flex-1 display-inline-block support">
+                <i class="fas fa-headset display-inline-block"></i>
+                <div class="display-inline-block">
+                    <p>Online support</p>
+                    <h4>+012 (345) 6789</h4>
+                </div>
+            </div>
         </div>
     </div>
     <div class="block info-box-line">
@@ -506,7 +514,7 @@
                     <button class="category-button" onclick="filterCategories('students')">Students</button>
                     <button class="category-button" onclick="filterCategories('teachers')">Teachers</button>
                     <button class="category-button" onclick="filterCategories('campus')">Campus</button>
-                  </div>
+                </div>
                 <div class="gallery">
                     <div class="row">
                         <div class="gallery-column university">
@@ -829,7 +837,84 @@
                     </div>
                 </div>
                 <h2 class="text-align-center white-color">What Our Students Say</h2>
-                <!--TODO: feedback generator from JSON files -->
+                <div class="row">
+                    <div class="column-flex-50">
+                        <div class="feedback-container">
+                            <div class="feedback-block"></div>
+                            <div class="feedback-block feedback-overlay">
+                                <div class="feedback-content" id="alex">
+                                    <p class="feedback-main-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Quo fugit ea mollitia veniam, soluta, officiis hic consectetur esse consequuntur saepe repellat, pariatur accusamus cumque temporibus? 
+                                        Sunt dignissimos voluptates recusandae cupiditate.
+                                    </p>
+                                    <p class="feedback-secondary-text">
+                                        Quo fugit ea mollitia veniam, soluta, officiis hic consectetur esse consequuntur saepe repellat, pariatur accusamus cumque temporibus?
+                                    </p>
+                                    <div class="feedback-author">
+                                        <img class="instructor-course-profile-pic display-inline-block" src="/pics/instructor.png">
+                                        <div class="feedback-author-text">
+                                            <h4>Alex Zacks</h4>
+                                            <p class="feedback-author-title orange-color">CO-Founder</p>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-quote-left"></i>
+                                    <div class="feedback-navigation">
+                                        <button class="navigation-button" onclick="prevComment()"><i class="fas fa-angle-left"></i></button>
+                                        <button class="navigation-button" onclick="nextComment()"><i class="fas fa-angle-right"></i></button>
+                                    </div>
+                                </div>
+                                <div class="feedback-content" id="paul">
+                                    <p class="feedback-main-text">
+                                        adasdasdasdasdgggggggggggggggggggggg
+                                    </p>
+                                    <p class="feedback-secondary-text">
+                                        Quo fugit ea mollitia veniam, soluta, officiis hic consectetur esse consequuntur saepe repellat, pariatur accusamus cumque temporibus?
+                                    </p>
+                                    <div class="feedback-author">
+                                        <img class="instructor-course-profile-pic display-inline-block" src="/pics/instructor.png">
+                                        <div class="feedback-author-text">
+                                            <h4>Alex Zacks</h4>
+                                            <p class="feedback-author-title orange-color">CO-Founder</p>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-quote-left"></i>
+                                    <div class="feedback-navigation">
+                                        <button class="navigation-button" onclick="prevComment()"><i class="fas fa-angle-left"></i></button>
+                                        <button class="navigation-button" onclick="nextComment()"><i class="fas fa-angle-right"></i></button>
+                                    </div>
+                                </div>
+                                <div class="feedback-content" id="mark">
+                                    <p class="feedback-main-text">
+                                        ffffffffffffffffffffffffff
+                                    </p>
+                                    <p class="feedback-secondary-text">
+                                        Quo fugit ea mollitia veniam, soluta, officiis hic consectetur esse consequuntur saepe repellat, pariatur accusamus cumque temporibus?
+                                    </p>
+                                    <div class="feedback-author">
+                                        <img class="instructor-course-profile-pic display-inline-block" src="/pics/instructor.png">
+                                        <div class="feedback-author-text">
+                                            <h4>Alex Zacks</h4>
+                                            <p class="feedback-author-title orange-color">CO-Founder</p>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-quote-left"></i>
+                                    <div class="feedback-navigation">
+                                        <button class="navigation-button" onclick="prevComment()"><i class="fas fa-angle-left"></i></button>
+                                        <button class="navigation-button" onclick="nextComment()"><i class="fas fa-angle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-flex-50">
+                        <div class="feedback-pics-grid" id="feedbackPics">
+                            <img class="feedback-pic" src="/pics/instructor.png" id="alex" onclick="changeToComment(0)">
+                            <img class="feedback-pic" src="/pics/instructor.png" id="paul" onclick="changeToComment(1)">
+                            <img class="feedback-pic" src="/pics/instructor.png" id="mark" onclick="changeToComment(2)">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -890,7 +975,65 @@
                     </div>
                 </div>
                 <h2 class="text-align-center">Latest News & Blog</h2>
-                <!--TODO: news and blog generator from JSON files -->
+                <div class="blogs">
+                    <div class="column-flex-25 display-inline-block" style="border: 1px solid #e2e2e2;">
+                        <div class="course-image">
+                            <div class="event-card-img-cover">
+                                <img src="/pics/english-course.jpg" style="object-fit: cover; width: 100%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="blog-bottom">
+                            <div class="blog-stats">
+                                <i class="far fa-calendar-alt"></i>08 JUL 2021
+                                <i class="fas fa-comments"></i> COM(87)
+                            </div>
+                            <h4>Graphics Design (UI)</h4>
+                            <div class="blog-author">
+                                <img class="blog-author-image" src="/pics/instructor.png">
+                                <p>Paul Little</p>
+                                <button><i class="fas fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-flex-25 display-inline-block" style="border: 1px solid #e2e2e2;">
+                        <div class="course-image">
+                            <div class="event-card-img-cover">
+                                <img src="/pics/english-course.jpg" style="object-fit: cover; width: 100%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="blog-bottom">
+                            <div class="blog-stats">
+                                <i class="far fa-calendar-alt"></i>08 JUL 2021
+                                <i class="fas fa-comments"></i> COM(87)
+                            </div>
+                            <h4>Graphics Design (UI)</h4>
+                            <div class="blog-author">
+                                <img class="blog-author-image" src="/pics/instructor.png">
+                                <p>Paul Little</p>
+                                <button><i class="fas fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-flex-25 display-inline-block" style="border: 1px solid #e2e2e2;">
+                        <div class="course-image">
+                            <div class="event-card-img-cover">
+                                <img src="/pics/english-course.jpg" style="object-fit: cover; width: 100%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="blog-bottom">
+                            <div class="blog-stats">
+                                <i class="far fa-calendar-alt"></i>08 JUL 2021
+                                <i class="fas fa-comments"></i> COM(87)
+                            </div>
+                            <h4>Graphics Design (UI)</h4>
+                            <div class="blog-author">
+                                <img class="blog-author-image" src="/pics/instructor.png">
+                                <p>Paul Little</p>
+                                <button><i class="fas fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -940,7 +1083,6 @@
         }
 
 
-        // Add active class to the current button (highlight it)
         var btnContainer = document.getElementById("galleryCategories");
         var btns = btnContainer.getElementsByClassName("category-button");
         for (var i = 0; i < btns.length; i++) {
@@ -950,6 +1092,55 @@
                 this.className += " category-active";
             });
         }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+        var current_feedback = 0;
+        
+        var feedbackPics = document.getElementById("feedbackPics");
+        var feedbacks = feedbackPics.getElementsByClassName("feedback-pic");
+        var feedbackContents = document.getElementsByClassName("feedback-content");
+
+        changeToComment(0);
+
+        function prevComment() {
+            if (current_feedback > 0) {
+                removeClassesFromComments(current_feedback)
+                current_feedback--;
+                changeToComment(current_feedback)
+            }
+        }
+
+        function nextComment() {
+            if (current_feedback < feedbacks.length - 1) {
+                removeClassesFromComments(current_feedback)
+                current_feedback++;
+                changeToComment(current_feedback)
+            }
+        }
+
+        function changeToComment(comment_number) {
+            if (comment_number != current_feedback) {
+                removeClassesFromComments(current_feedback)
+                current_feedback = comment_number;
+            }
+
+            addClassesToComments(comment_number);
+        }
+
+        function removeClassesFromComments(from_comment) {
+            removeClass(feedbacks[from_comment], "feedback-pic-active");
+            removeClass(feedbackContents[feedbacks[from_comment].id], "display-block");
+        }
+
+        function addClassesToComments(to_comment) {
+            addClass(feedbacks[to_comment], "feedback-pic-active");
+            addClass(feedbackContents[feedbacks[to_comment].id], "display-block");
+        }
+
     </script>
     <footer>
         <section class="footer-logo-section footer-border-bottom block">
@@ -991,7 +1182,7 @@
             </div>
         </section>
         
-        <button class="footer-button-up"><i class="fas fa-chevron-up"></i></button>
+        <button onclick="scrollToTop()" class="footer-button-up"><i class="fas fa-chevron-up"></i></button>
 
         <section class="block">
             <div class="row mar-top">
