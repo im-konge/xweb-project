@@ -1237,7 +1237,7 @@ form.home-top-input button {
 }
 
 .display-inline-block {
-  display: inline-block; 
+  display: inline-block !important; 
 }
 
 .display-block {
@@ -1969,4 +1969,48 @@ form.home-top-input button {
 .about-info:last-of-type {
   border-top: 2px solid #e4e4e4;
   margin-bottom: 3rem;
+}
+
+.courses-active {
+  background-color: #ea5822ff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  color: white;
+}
+
+#courseCategories .category-button:hover {
+  border: none;
+}
+
+.courses-cards .card-price {
+  margin-top: -10% !important;
+  margin-left: 16rem !important;
+  font-size: 1rem !important;
+}
+
+.courses-cards button {
+  border-radius: 2rem;
+}
+
+.courses-cards .card-back .card-price {
+  color: #3662ff !important;
+  background-color: white !important;
+  margin-top: -20% !important;
+  margin-left: 13rem !important;
+}
+
+.courses-cards button:hover,
+.courses-cards button:hover > i {
+  color: #3662ff !important;
+
+}
+
+.courses-cards .card-back h4 {
+  font-size: 1.2rem;
+  vertical-align: top;
+  margin: 1rem;
+}
+
+.courses-card {
+  display: none;
 }

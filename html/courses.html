@@ -62,17 +62,19 @@
         <div class="block">
             <!-- available courses part -->
             <div id="#available-courses">
-                <div id="courseCategories" class="text-align-center" style="border-bottom: 1px solid #eaeaea; margin-bottom: 1rem;">
-                    <button class="category-button category-active" onclick="filterCategories('all')"> Show All</button>
-                    <button class="category-button" onclick="filterCategories('university')"> University</button>
-                    <button class="category-button" onclick="filterCategories('group-study')"> Group Study</button>
-                    <button class="category-button" onclick="filterCategories('awards')">Awards</button>
-                    <button class="category-button" onclick="filterCategories('students')">Students</button>
-                    <button class="category-button" onclick="filterCategories('teachers')">Teachers</button>
-                    <button class="category-button" onclick="filterCategories('campus')">Campus</button>
+                <div id="courseCategories" class="text-align-center" style="margin-bottom: 1rem;">
+                    <button class="category-button courses-active" onclick="filterCategories('all')"> Show All</button>
+                    <button class="category-button" onclick="filterCategories('design')"> Design</button>
+                    <button class="category-button" onclick="filterCategories('computer')"> Computer</button>
+                    <button class="category-button" onclick="filterCategories('development')">Development</button>
+                    <button class="category-button" onclick="filterCategories('medical')">Medical</button>
+                    <button class="category-button" onclick="filterCategories('photography')">Photography</button>
+                    <button class="category-button" onclick="filterCategories('marketing')">Marketing</button>
+                    <button class="category-button" onclick="filterCategories('driving')">Driving</button>
+                    <button class="category-button" onclick="filterCategories('business')">Business</button>
                 </div>
-                <div>
-                    <div class="column-flex-25 display-inline-block card" style="margin-left: 6.25%;">
+                <div class="courses-cards">
+                    <div class="column-flex-25 card courses-card design" style="margin-left: 6.25%;">
                         <div class="card-inner gray-border-complete">
                             <div class="card-front white-bg-color">
                                 <div class="instructor-course-image">
@@ -82,9 +84,9 @@
                                     <div class="instructor-course-desc">
                                         <img class="instructor-course-profile-pic" src="/pics/instructor.png">
                                         <h4>Paul</h4>
-                                        <span class="rounded-tag display-inline-block orange-bg-color">
-                                            $49.30
-                                        </span>
+                                    </div>
+                                    <div class="card-price">
+                                        $49.30
                                     </div>
                                 </div>
                                 <div class="instructor-course-bottom">
@@ -106,7 +108,7 @@
                             </div>
                             <div class="card-back blue-card-bg-color">
                                 <div class="card-back-content">
-                                    <span class="rounded-tag display-inline-block white-bg-color orange-color" style="width: 4.5rem;">english</span>
+                                    <span class="rounded-tag display-inline-block white-bg-color" style="width: 4.5rem; color: #3662ff;">english</span>
                                     <div class="white-color mar-left-5 display-inline-block">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -118,9 +120,9 @@
                                     <div>
                                         <img class="instructor-course-profile-pic display-inline-block" src="/pics/instructor.png">
                                         <h4 class="white-color display-inline-block">Paul</h4>
-                                        <span class="rounded-tag display-inline-block white-bg-color orange-color" style="width: 3.5rem; margin-left: 7.5rem;">
+                                        <div class="card-price">
                                             $49.30
-                                        </span>
+                                        </div>
                                     </div>
                                     <p>
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -137,7 +139,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column-flex-25 display-inline-block card" style="margin-left: 6.25%;">
+                    <div class="column-flex-25 card courses-card computer" style="margin-left: 6.25%;">
                         <div class="card-inner gray-border-complete">
                             <div class="card-front white-bg-color">
                                 <div class="instructor-course-image">
@@ -147,9 +149,9 @@
                                     <div class="instructor-course-desc">
                                         <img class="instructor-course-profile-pic" src="/pics/instructor.png">
                                         <h4>Paul</h4>
-                                        <span class="rounded-tag display-inline-block orange-bg-color">
-                                            $49.30
-                                        </span>
+                                    </div>
+                                    <div class="card-price">
+                                        $49.30
                                     </div>
                                 </div>
                                 <div class="instructor-course-bottom">
@@ -171,7 +173,7 @@
                             </div>
                             <div class="card-back blue-card-bg-color">
                                 <div class="card-back-content">
-                                    <span class="rounded-tag display-inline-block white-bg-color orange-color" style="width: 4.5rem;">english</span>
+                                    <span class="rounded-tag display-inline-block white-bg-color" style="width: 4.5rem; color: #3662ff;">english</span>
                                     <div class="white-color mar-left-5 display-inline-block">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -183,9 +185,9 @@
                                     <div>
                                         <img class="instructor-course-profile-pic display-inline-block" src="/pics/instructor.png">
                                         <h4 class="white-color display-inline-block">Paul</h4>
-                                        <span class="rounded-tag display-inline-block white-bg-color orange-color" style="width: 3.5rem; margin-left: 7.5rem;">
+                                        <div class="card-price">
                                             $49.30
-                                        </span>
+                                        </div>
                                     </div>
                                     <p>
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -202,7 +204,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="column-flex-25 display-inline-block card" style="margin-left: 6.25%;">
+                    <div class="column-flex-25 card courses-card development" style="margin-left: 6.25%;">
                         <div class="card-inner gray-border-complete">
                             <div class="card-front white-bg-color">
                                 <div class="instructor-course-image">
@@ -212,9 +214,9 @@
                                     <div class="instructor-course-desc">
                                         <img class="instructor-course-profile-pic" src="/pics/instructor.png">
                                         <h4>Paul</h4>
-                                        <span class="rounded-tag display-inline-block orange-bg-color">
-                                            $49.30
-                                        </span>
+                                    </div>
+                                    <div class="card-price">
+                                        $49.30
                                     </div>
                                 </div>
                                 <div class="instructor-course-bottom">
@@ -236,7 +238,7 @@
                             </div>
                             <div class="card-back blue-card-bg-color">
                                 <div class="card-back-content">
-                                    <span class="rounded-tag display-inline-block white-bg-color orange-color" style="width: 4.5rem;">english</span>
+                                    <span class="rounded-tag display-inline-block white-bg-color" style="width: 4.5rem; color: #3662ff;">english</span>
                                     <div class="white-color mar-left-5 display-inline-block">
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star"></i>
@@ -248,9 +250,9 @@
                                     <div>
                                         <img class="instructor-course-profile-pic display-inline-block" src="/pics/instructor.png">
                                         <h4 class="white-color display-inline-block">Paul</h4>
-                                        <span class="rounded-tag display-inline-block white-bg-color orange-color" style="width: 3.5rem; margin-left: 7.5rem;">
+                                        <div class="card-price">
                                             $49.30
-                                        </span>
+                                        </div>
                                     </div>
                                     <p>
                                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
@@ -536,16 +538,14 @@
     </div>
 
     <script>
-        new SimpleLightbox('.gallery a');
-
         filterCategories("all")
         function filterCategories(c) {
             var x, i;
-            x = document.getElementsByClassName("gallery-column");
+            x = document.getElementsByClassName("courses-card");
             if (c == "all") c = "";
             for (i = 0; i < x.length; i++) {
-                removeClass(x[i], "display-block");
-                if (x[i].className.indexOf(c) > -1) addClass(x[i], "display-block");
+                removeClass(x[i], "display-inline-block");
+                if (x[i].className.indexOf(c) > -1) addClass(x[i], "display-inline-block");
             }
         }
 
@@ -570,14 +570,13 @@
             element.className = arr1.join(" ");
         }
 
-
-        var btnContainer = document.getElementById("galleryCategories");
+        var btnContainer = document.getElementById("courseCategories");
         var btns = btnContainer.getElementsByClassName("category-button");
         for (var i = 0; i < btns.length; i++) {
             btns[i].addEventListener("click", function(){
-                var current = document.getElementsByClassName("category-active");
-                current[0].className = current[0].className.replace(" category-active", "");
-                this.className += " category-active";
+                var current = document.getElementsByClassName("courses-active");
+                current[0].className = current[0].className.replace(" courses-active", "");
+                this.className += " courses-active";
             });
         }
 
