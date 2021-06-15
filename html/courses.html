@@ -21,7 +21,7 @@
             <b class="boldness-900">Edu</b>Plus
         </a>
         
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse justify-content-center">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
@@ -51,70 +51,480 @@
     </nav>
     
     <!-- top -->
-    <div>
-        <h1>Our Courses</h1>
-        <p>Home > Courses</p>
-    </div>
-    <div>
-        <!-- TODO: courses with categories-->
-    </div>
-
-    <!-- courses part -->
-    <div id="#course-categories">
-        <div class="subtitle">
-            <img src="/pics/dots.png"></i>
-            Popular Categories
-            <img src="/pics/dots.png"></i>
+    <div class="page-top-info">
+        <div class="block">
+            <h1>Our Courses</h1>
+            <p>Home <i class="fas fa-angle-right"></i> Courses</p>
         </div>
-        <h2>Course Categories</h2>
-        <!--TODO: courses generator from JSON files -->
     </div>
 
-    <!-- instructors -->
-    <div id="#expert-instructors">
-        <div class="subtitle">
-            <img src="/pics/dots.png"></i>
-            Team Members
-            <img src="/pics/dots.png"></i>
+    <div class="page-content white-bg-color">
+        <div class="block">
+            <!-- available courses part -->
+            <div id="#available-courses">
+                <div id="courseCategories" class="text-align-center" style="margin-bottom: 1rem;">
+                    <button class="category-button courses-active" onclick="filterCategories('all')"> Show All</button>
+                    <button class="category-button" onclick="filterCategories('design')"> Design</button>
+                    <button class="category-button" onclick="filterCategories('computer')"> Computer</button>
+                    <button class="category-button" onclick="filterCategories('development')">Development</button>
+                    <button class="category-button" onclick="filterCategories('medical')">Medical</button>
+                    <button class="category-button" onclick="filterCategories('photography')">Photography</button>
+                    <button class="category-button" onclick="filterCategories('marketing')">Marketing</button>
+                    <button class="category-button" onclick="filterCategories('driving')">Driving</button>
+                    <button class="category-button" onclick="filterCategories('business')">Business</button>
+                </div>
+                <div class="courses-cards">
+                    <div class="column-flex-25 card courses-card design" style="margin-left: 6.25%;">
+                        <div class="card-inner gray-border-complete">
+                            <div class="card-front white-bg-color">
+                                <div class="instructor-course-image">
+                                    <div class="event-card-img-cover course-bg">
+                                        <img src="/pics/english-course.jpg" style="object-fit: cover; width: 100%; height: auto;">
+                                    </div>
+                                    <div class="instructor-course-desc">
+                                        <img class="instructor-course-profile-pic" src="/pics/instructor.png">
+                                        <h4>Paul</h4>
+                                    </div>
+                                    <div class="card-price">
+                                        $49.30
+                                    </div>
+                                </div>
+                                <div class="instructor-course-bottom">
+                                    <span class="rounded-tag display-inline-block blue-bg-color" style="width: 4.5rem;">english</span>
+                                    <div class="display-inline-block orange-color mar-left-5">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <h4>Best Courses For Learning English</h5>
+                                    <div class="instructor-course-stats">
+                                        <i class="fas fa-users orange-color"></i> 25
+                                        <i class="fas fa-clock orange-color"></i> 23hr
+                                        <i class="fas fa-comments orange-color"></i> 1.5k
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-back blue-card-bg-color">
+                                <div class="card-back-content">
+                                    <span class="rounded-tag display-inline-block white-bg-color" style="width: 4.5rem; color: #3662ff;">english</span>
+                                    <div class="white-color mar-left-5 display-inline-block">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <h4 class="white-color course-name">Best Courses For Learning English</h4>
+                                    <div>
+                                        <img class="instructor-course-profile-pic display-inline-block" src="/pics/instructor.png">
+                                        <h4 class="white-color display-inline-block">Paul</h4>
+                                        <div class="card-price">
+                                            $49.30
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                        Distinctio eos sunt, tempora deserunt ab architecto ad natus ipsam, 
+                                        alias atque repellendus explicabo odio iste.
+                                    </p>
+                                    <button>get enrolled <i class="fas fa-arrow-right"></i></button>
+                                </div>
+                                <div class="instructor-course-stats text-align-center">
+                                    <i class="fas fa-users white-color"></i> 25
+                                    <i class="fas fa-clock white-color"></i> 23hr
+                                    <i class="fas fa-comments white-color"></i> 1.5k
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-flex-25 card courses-card computer" style="margin-left: 6.25%;">
+                        <div class="card-inner gray-border-complete">
+                            <div class="card-front white-bg-color">
+                                <div class="instructor-course-image">
+                                    <div class="event-card-img-cover course-bg">
+                                        <img src="/pics/english-course.jpg" style="object-fit: cover; width: 100%; height: auto;">
+                                    </div>
+                                    <div class="instructor-course-desc">
+                                        <img class="instructor-course-profile-pic" src="/pics/instructor.png">
+                                        <h4>Paul</h4>
+                                    </div>
+                                    <div class="card-price">
+                                        $49.30
+                                    </div>
+                                </div>
+                                <div class="instructor-course-bottom">
+                                    <span class="rounded-tag display-inline-block blue-bg-color" style="width: 4.5rem;">english</span>
+                                    <div class="display-inline-block orange-color mar-left-5">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <h4>Best Courses For Learning English</h5>
+                                    <div class="instructor-course-stats">
+                                        <i class="fas fa-users orange-color"></i> 25
+                                        <i class="fas fa-clock orange-color"></i> 23hr
+                                        <i class="fas fa-comments orange-color"></i> 1.5k
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-back blue-card-bg-color">
+                                <div class="card-back-content">
+                                    <span class="rounded-tag display-inline-block white-bg-color" style="width: 4.5rem; color: #3662ff;">english</span>
+                                    <div class="white-color mar-left-5 display-inline-block">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <h4 class="white-color course-name">Best Courses For Learning English</h4>
+                                    <div>
+                                        <img class="instructor-course-profile-pic display-inline-block" src="/pics/instructor.png">
+                                        <h4 class="white-color display-inline-block">Paul</h4>
+                                        <div class="card-price">
+                                            $49.30
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                        Distinctio eos sunt, tempora deserunt ab architecto ad natus ipsam, 
+                                        alias atque repellendus explicabo odio iste.
+                                    </p>
+                                    <button>get enrolled <i class="fas fa-arrow-right"></i></button>
+                                </div>
+                                <div class="instructor-course-stats text-align-center">
+                                    <i class="fas fa-users white-color"></i> 25
+                                    <i class="fas fa-clock white-color"></i> 23hr
+                                    <i class="fas fa-comments white-color"></i> 1.5k
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-flex-25 card courses-card development" style="margin-left: 6.25%;">
+                        <div class="card-inner gray-border-complete">
+                            <div class="card-front white-bg-color">
+                                <div class="instructor-course-image">
+                                    <div class="event-card-img-cover course-bg">
+                                        <img src="/pics/english-course.jpg" style="object-fit: cover; width: 100%; height: auto;">
+                                    </div>
+                                    <div class="instructor-course-desc">
+                                        <img class="instructor-course-profile-pic" src="/pics/instructor.png">
+                                        <h4>Paul</h4>
+                                    </div>
+                                    <div class="card-price">
+                                        $49.30
+                                    </div>
+                                </div>
+                                <div class="instructor-course-bottom">
+                                    <span class="rounded-tag display-inline-block blue-bg-color" style="width: 4.5rem;">english</span>
+                                    <div class="display-inline-block orange-color mar-left-5">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <h4>Best Courses For Learning English</h5>
+                                    <div class="instructor-course-stats">
+                                        <i class="fas fa-users orange-color"></i> 25
+                                        <i class="fas fa-clock orange-color"></i> 23hr
+                                        <i class="fas fa-comments orange-color"></i> 1.5k
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-back blue-card-bg-color">
+                                <div class="card-back-content">
+                                    <span class="rounded-tag display-inline-block white-bg-color" style="width: 4.5rem; color: #3662ff;">english</span>
+                                    <div class="white-color mar-left-5 display-inline-block">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <h4 class="white-color course-name">Best Courses For Learning English</h4>
+                                    <div>
+                                        <img class="instructor-course-profile-pic display-inline-block" src="/pics/instructor.png">
+                                        <h4 class="white-color display-inline-block">Paul</h4>
+                                        <div class="card-price">
+                                            $49.30
+                                        </div>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                        Distinctio eos sunt, tempora deserunt ab architecto ad natus ipsam, 
+                                        alias atque repellendus explicabo odio iste.
+                                    </p>
+                                    <button>get enrolled <i class="fas fa-arrow-right"></i></button>
+                                </div>
+                                <div class="instructor-course-stats text-align-center">
+                                    <i class="fas fa-users white-color"></i> 25
+                                    <i class="fas fa-clock white-color"></i> 23hr
+                                    <i class="fas fa-comments white-color"></i> 1.5k
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h2>Expert Instructors</h2>
-        <!--TODO: instructors generator from JSON files -->
     </div>
 
-    <!-- news & blog -->
-    <div id="#news-and-blog">
-        <div class="subtitle">
-            <!-- here we should have white text and dots -->
-            <img src="/pics/dots.png"></i>
-            Artices & Tipes
-            <img src="/pics/dots.png"></i>
+    <div class="page-content light-cyan-bg-color">
+        <div class="block">
+            <!-- instructors -->
+            <div id="#expert-instructors">
+                <div class="subtitle text-align-center">
+                    <div class="subtitle-squares orange-color">
+                        <i class="fas fa-square-full"></i>
+                        <i class="fas fa-square-full"></i>
+                        <i class="fas fa-square-full"></i>
+                    </div>
+                    Team Members
+                    <div class="subtitle-squares orange-color">
+                        <i class="fas fa-square-full"></i>
+                        <i class="fas fa-square-full"></i>
+                        <i class="fas fa-square-full"></i>
+                    </div>
+                </div>
+                <h2 class="text-align-center">Expert Instructors</h2>
+                <div class="row">
+                    <div class="column-flex-20 content-block instructor-box" style="padding: 0; padding-bottom: 2rem; margin-left: 5%;">
+                        <img src="/pics/instructor.png" style="width: 100%;height: auto; margin-left: 0; margin-top: 0;">
+                        <div class="dropup">
+                            <button class="dropup-button"><i class="fas fa-plus"></i></button>
+                            <div class="dropup-content">
+                                <a href="https://www.facebook.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fb-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.twitter.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="twitter-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.youtube.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="yt-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-youtube fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.linkedin.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="linkedin-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="display: inline-block; margin-left: 10%; margin-right: auto;">
+                            <h4>Paul Little</h4>
+                            <p style="padding-bottom: 1rem; border-bottom: 1px solid #e1e1e1; font-size: 0.8rem;">History Teacher</p>
+                            <p style="margin-top: 1rem; font-size: 0.8rem;"><i class="orange-color fas fa-book"></i> 120+ Courses</p>
+                        </div>
+                    </div>
+                    <div class="column-flex-20 content-block instructor-box" style="padding: 0;padding-bottom: 2rem; margin-left: 2.5%;">
+                        <img src="/pics/instructor.png" style="width: 100%;height: auto; margin-left: 0; margin-top: 0;">
+                        <div class="dropup">
+                            <button class="dropup-button"><i class="fas fa-plus"></i></button>
+                            <div class="dropup-content">
+                                <a href="https://www.facebook.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fb-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.twitter.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="twitter-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.youtube.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="yt-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-youtube fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.linkedin.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="linkedin-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="display: inline-block; margin-left: 10%; margin-right: auto;">
+                            <h4>Paul Little</h4>
+                            <p style="padding-bottom: 1rem; border-bottom: 1px solid #e1e1e1; font-size: 0.8rem;">History Teacher</p>
+                            <p style="margin-top: 1rem; font-size: 0.8rem;"><i class="orange-color fas fa-book"></i> 120+ Courses</p>
+                        </div>
+                    </div>
+                    <div class="column-flex-20 content-block instructor-box" style="padding: 0;padding-bottom: 2rem; margin-left: 2.5%;">
+                        <img src="/pics/instructor.png" style="width: 100%;height: auto; margin-left: 0; margin-top: 0;">
+                        <div class="dropup">
+                            <button class="dropup-button"><i class="fas fa-plus"></i></button>
+                            <div class="dropup-content">
+                                <a href="https://www.facebook.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fb-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.twitter.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="twitter-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.youtube.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="yt-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-youtube fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.linkedin.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="linkedin-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="display: inline-block; margin-left: 10%; margin-right: auto;">
+                            <h4>Paul Little</h4>
+                            <p style="padding-bottom: 1rem; border-bottom: 1px solid #e1e1e1; font-size: 0.8rem;">History Teacher</p>
+                            <p style="margin-top: 1rem; font-size: 0.8rem;"><i class="orange-color fas fa-book"></i> 120+ Courses</p>
+                        </div>
+                    </div>
+                    <div class="column-flex-20 content-block instructor-box" style="padding: 0;padding-bottom: 2rem; margin-left: 2.5%;">
+                        <img src="/pics/instructor.png" style="width: 100%;height: auto; margin-left: 0; margin-top: 0;">
+                        <div class="dropup">
+                            <button class="dropup-button"><i class="fas fa-plus"></i></button>
+                            <div class="dropup-content">
+                                <a href="https://www.facebook.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="fb-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-facebook-f fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.twitter.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="twitter-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-twitter fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.youtube.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="yt-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-youtube fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                                <a href="https://www.linkedin.com/">
+                                    <span class="fa-stack fa-1x">
+                                        <i class="linkedin-bg fa fa-circle fa-stack-2x"></i>
+                                        <i class="fab fa-linkedin fa-stack-1x icon-social"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div style="display: inline-block; margin-left: 10%; margin-right: auto;">
+                            <h4>Paul Little</h4>
+                            <p style="padding-bottom: 1rem; border-bottom: 1px solid #e1e1e1; font-size: 0.8rem;">History Teacher</p>
+                            <p style="margin-top: 1rem; font-size: 0.8rem;"><i class="orange-color fas fa-book"></i> 120+ Courses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <h2>Latest News & Blog</h2>
-        <!--TODO: news and blog generator from JSON files -->
     </div>
 
-    <!-- generate on click for each course-->
-    <div>
-        <div>
-            <!-- video -->
+    <div class="page-content white-bg-color">
+        <div class="block">
+            <!-- news & blog -->
+            <div id="#news-and-blog">
+                <div class="subtitle text-align-center">
+                    <div class="subtitle-squares orange-color">
+                        <i class="fas fa-square-full"></i>
+                        <i class="fas fa-square-full"></i>
+                        <i class="fas fa-square-full"></i>
+                    </div>
+                    Artices & Tipes
+                    <div class="subtitle-squares orange-color">
+                        <i class="fas fa-square-full"></i>
+                        <i class="fas fa-square-full"></i>
+                        <i class="fas fa-square-full"></i>
+                    </div>
+                </div>
+                <h2 class="text-align-center">Latest News & Blog</h2>
+                <div class="blogs">
+                    <div class="column-flex-25 display-inline-block" style="border: 1px solid #e2e2e2;">
+                        <div class="course-image">
+                            <div class="event-card-img-cover">
+                                <img src="/pics/english-course.jpg" style="object-fit: cover; width: 100%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="blog-bottom">
+                            <div class="blog-stats">
+                                <i class="far fa-calendar-alt"></i>08 JUL 2021
+                                <i class="fas fa-comments"></i> COM(87)
+                            </div>
+                            <h4>Graphics Design (UI)</h4>
+                            <div class="blog-author">
+                                <img class="blog-author-image" src="/pics/instructor.png">
+                                <p>Paul Little</p>
+                                <button><i class="fas fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-flex-25 display-inline-block" style="border: 1px solid #e2e2e2;">
+                        <div class="course-image">
+                            <div class="event-card-img-cover">
+                                <img src="/pics/english-course.jpg" style="object-fit: cover; width: 100%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="blog-bottom">
+                            <div class="blog-stats">
+                                <i class="far fa-calendar-alt"></i>08 JUL 2021
+                                <i class="fas fa-comments"></i> COM(87)
+                            </div>
+                            <h4>Graphics Design (UI)</h4>
+                            <div class="blog-author">
+                                <img class="blog-author-image" src="/pics/instructor.png">
+                                <p>Paul Little</p>
+                                <button><i class="fas fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-flex-25 display-inline-block" style="border: 1px solid #e2e2e2;">
+                        <div class="course-image">
+                            <div class="event-card-img-cover">
+                                <img src="/pics/english-course.jpg" style="object-fit: cover; width: 100%; height: auto;">
+                            </div>
+                        </div>
+                        <div class="blog-bottom">
+                            <div class="blog-stats">
+                                <i class="far fa-calendar-alt"></i>08 JUL 2021
+                                <i class="fas fa-comments"></i> COM(87)
+                            </div>
+                            <h4>Graphics Design (UI)</h4>
+                            <div class="blog-author">
+                                <img class="blog-author-image" src="/pics/instructor.png">
+                                <p>Paul Little</p>
+                                <button><i class="fas fa-angle-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <!-- stars-->
-        </div>
-        <h3>name</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid atque ducimus veniam quia ad, sapiente assumenda sunt nulla debitis hic eligendi. Natus ipsum assumenda nam, fugiat corrupti iste fugit delectus!</p>
-
-        <h4>Curriculum</h4>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ullam corrupti totam. Libero at sit animi facere minus voluptates quam quas culpa eligendi aut, exercitationem, nesciunt perspiciatis cupiditate assumenda debitis.</p>
-        <div>
-            Lectures
-        </div>
-        <img>
-        <h4>Frequently Asked Questions</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quod ad sapiente non officia hic deleniti ipsam dolore eaque nesciunt, ut quis reprehenderit facilis debitis delectus! Exercitationem sed cumque pariatur!</p>
-        <!-- TODO questions -->
-        <h4>Course Instructors</h4>
-        <!-- TODO instructors-->
     </div>
 
     <div class="sponsors-bar">
@@ -126,6 +536,55 @@
             <img src="/pics/sponsors/03.png"/>        
         </div>
     </div>
+
+    <script>
+        filterCategories("all")
+        function filterCategories(c) {
+            var x, i;
+            x = document.getElementsByClassName("courses-card");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                removeClass(x[i], "display-inline-block");
+                if (x[i].className.indexOf(c) > -1) addClass(x[i], "display-inline-block");
+            }
+        }
+
+        function addClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+            }
+        }
+
+        function removeClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        var btnContainer = document.getElementById("courseCategories");
+        var btns = btnContainer.getElementsByClassName("category-button");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("courses-active");
+                current[0].className = current[0].className.replace(" courses-active", "");
+                this.className += " courses-active";
+            });
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 
     <footer>
         <section class="footer-logo-section footer-border-bottom block">
@@ -167,7 +626,7 @@
             </div>
         </section>
         
-        <button class="footer-button-up"><i class="fas fa-chevron-up"></i></button>
+        <button onclick="scrollToTop()" class="footer-button-up"><i class="fas fa-chevron-up"></i></button>
 
         <section class="block">
             <div class="row mar-top">
