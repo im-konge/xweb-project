@@ -11,14 +11,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/base.css">
+    <script src="/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/239fe5ee7d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <script src="https://kit.fontawesome.com/239fe5ee7d.js" crossorigin="anonymous"></script>
-
     <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand">    
+        <a class="navbar-brand" href="home.html">    
             <img class="logo-img" src="/pics/eduplus-logo.png" />
-            <b class="boldness-900">Edu</b>Plus
+            <p>
+                <b class="boldness-900">Edu</b>Plus
+            </p>
         </a>
         
         <div class="collapse navbar-collapse justify-content-center">
@@ -46,26 +48,33 @@
                 </div>
             </a>
             <div class="icon-rectangle">
-                <i class="icon icon-navbar far fa-user-circle"></i>
-                <b class="icon-text boldness-900">SIGN IN</b>
+                <button>
+                    <i class="icon-navbar far fa-user-circle"></i>
+                    <b class="boldness-900">SIGN IN</b>
+                </button>
             </div>
         </div>
     </nav>
 
     <div class="page-top-info">
-        <div class="block">
-            <h1>Contact Us</h1>
-            <p>Home <i class="fas fa-angle-right"></i> Contact Us</p>
+        <img src="/pics/group.jpg" style="width: 100%; height: 30rem; object-fit: cover; ">
+        <div class="pic-overlay">
+            <div class="block">
+                <h1>Contact Us</h1>
+                <p>Home <i class="fas fa-angle-right"></i> Contact Us</p>
+            </div>
         </div>
     </div>
 
     <div class="page-content">
         <div class="block">
-            <div style="width: 30%; display: inline-block; left: 0; right: auto; margin-top: 4rem;">
+            <div class="column-flex-2 display-inline-block">
                 <span class="subtitle">
-                    <span class="title-squares"></span>
-                    <span class="title-squares"></span>
-                    <span class="title-squares"></span>
+                    <div class="subtitle-squares orange-color">
+                        <i class="fas fa-square-full"></i>
+                        <i class="fas fa-square-full"></i>
+                        <i class="fas fa-square-full"></i>
+                    </div>
                     <b class="boldness-500">Contact Us</b>
                 </span> 
                 <h2>Get in Touch</h2>
@@ -141,13 +150,17 @@
         <div class="block"  style="width: 100%; display: block; margin-top: 4rem; text-align: center;">
             <div class="subtitle">
                 <span class="subtitle">
-                    <span class="title-squares"></span>
-                    <span class="title-squares"></span>
-                    <span class="title-squares"></span>
+                    <div class="subtitle-squares">
+                        <i class="fas fa-square-full"></i>
+                        <i class="fas fa-square-full"></i>
+                        <i class="fas fa-square-full"></i>
+                    </div>
                     <b class="boldness-500">Get In Touch</b>
-                    <span class="title-squares"></span>
-                    <span class="title-squares"></span>
-                    <span class="title-squares"></span>
+                    <div class="subtitle-squares">
+                        <i class="fas fa-square-full"></i>
+                        <i class="fas fa-square-full"></i>
+                        <i class="fas fa-square-full"></i>
+                    </div>
                 </span> 
             </div>
             <h2>Leave Us Message</h2>
@@ -171,9 +184,6 @@
                 <button type="submit">SEND MESSAGE</button>
             </form>
         </div>
-        <br>
-        <br>
-        <br>
     </div>
 
     <div class="sponsors-bar">
@@ -189,36 +199,38 @@
     <footer>
         <section class="footer-logo-section footer-border-bottom block">
             <div class="footer-logo footer-social-padding" style="display: inline-block;">
-                <a class="logo-dark-bg footer-social-padding" href="home.html">    
+                <a class="logo-dark-bg footer-social-padding white-color" href="home.html">    
                     <img class="logo-img" src="/pics/eduplus-logo-dark-bg.png" />
-                    <b class="boldness-900">Edu</b>Plus
+                    <p>
+                        <b class="boldness-900">Edu</b>Plus
+                    </p>
                 </a>
             </div>
             <div class="display-table footer-social footer-social-padding">
-                <a class="boldness-600 footer-social-item-padding footer-social-item" href="https://www.facebook.com/">
+                <a class="boldness-600 footer-social-item-padding footer-social-item white-color" href="https://www.facebook.com/">
                     <span class="fa-stack fa-1x">
-                        <i class="footer-fb fa fa-circle fa-stack-2x"></i>
+                        <i class="footer-fb fa fa-circle fa-stack-2x fb-bg"></i>
                         <i class="icon-footer fab fa-facebook-f fa-stack-1x"></i>
                     </span>
                     Facebook
                 </a>
-                <a class="boldness-600 footer-social-item-padding footer-social-item" href="https://www.twitter.com/">
+                <a class="boldness-600 footer-social-item-padding footer-social-item white-color" href="https://www.twitter.com/">
                     <span class="fa-stack fa-1x">
-                        <i class="footer-twitter fa fa-circle fa-stack-2x"></i>
+                        <i class="footer-twitter fa fa-circle fa-stack-2x twitter-bg"></i>
                         <i class="icon-footer fab fa-twitter fa-stack-1x"></i>
                     </span>
                     Twitter
                 </a>
-                <a class="boldness-600 footer-social-item-padding footer-social-item" href="https://www.youtube.com/">
+                <a class="boldness-600 footer-social-item-padding footer-social-item white-color" href="https://www.youtube.com/">
                     <span class="fa-stack fa-1x">
-                        <i class="footer-yt fa fa-circle fa-stack-2x"></i>
+                        <i class="footer-yt fa fa-circle fa-stack-2x yt-bg"></i>
                         <i class="icon-footer fab fa-youtube fa-stack-1x"></i>
                     </span>
                     Youtube
                 </a>
-                <a class="boldness-600 footer-social-item-padding footer-social-item" href="https://www.instagram.com/">
+                <a class="boldness-600 footer-social-item-padding footer-social-item white-color" href="https://www.instagram.com/">
                     <span class="fa-stack fa-1x">
-                        <i class="footer-ig fa fa-circle fa-stack-2x"></i>
+                        <i class="footer-ig fa fa-circle fa-stack-2x ig-bg"></i>
                         <i class="icon-footer fab fa-instagram fa-stack-1x"></i>
                     </span>
                     Instagram
@@ -226,29 +238,24 @@
             </div>
         </section>
         
-        <button class="footer-button-up"><i class="fas fa-chevron-up"></i></button>
+        <button onclick="scrollToTop()" class="footer-button-up"><i class="fas fa-chevron-up"></i></button>
 
         <section class="block">
             <div class="row mar-top">
                 <div class="column-flex-1 mar-sides-auto mar-bottom">
                     <h6 class="footer-heading">Our Courses</h6>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Web Development</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Business Studies</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Computer Engineering</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>English Learning</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Graphics Design</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Color Combinations</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Software Development</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Photography</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Advance WordPress</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Graphics Design</a></p>
+                    <a href="/html/courses-details.html"><p class="footer-item"><i class="fas fa-circle"></i>Web Development</p></a>
+                    <a href="/html/courses-details.html"><p class="footer-item"><i class="fas fa-circle"></i>Business Studies</p></a>
+                    <a href="/html/courses-details.html"><p class="footer-item"><i class="fas fa-circle"></i>Computer Engineering</p></a>
+                    <a href="/html/courses-details.html"><p class="footer-item"><i class="fas fa-circle"></i>English Learning</p></a>
+                    <a href="/html/courses-details.html"><p class="footer-item"><i class="fas fa-circle"></i>Software Development</p></a>
                 </div>
                 <div class="column-flex-1 mar-sides-auto mar-bottom">
                     <h6 class="footer-heading">Company</h6>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>About EduPlus</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Instructors</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Career</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Courses</a></p>
+                    <a href="/html/about.html"><p class="footer-item"><i class="fas fa-circle"></i>About EduPlus</p></a>
+                    <a href="/html/instructors.html"><p class="footer-item"><i class="fas fa-circle"></i>Instructors</p></a>
+                    <a href="/html/contact-us.html"><p class="footer-item"><i class="fas fa-circle"></i>Career</p></a>
+                    <a href="/html/courses.html"><p class="footer-item"><i class="fas fa-circle"></i>Courses</p></a>
                 </div>
                 <div class="column-flex-2 mar-sides-auto mar-bottom">
                     <h6 class="footer-heading">Newsletters</h6>
@@ -266,7 +273,6 @@
                 Copyright @ 2021 <a href="home.html">EduPlus</a>. All Rights Reserved.</p>
             </div>
         </section>
-        <br>
     </footer>
     <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 </body>
