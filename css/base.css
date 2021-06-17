@@ -19,10 +19,15 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 button {
   cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: #062a35;
 }
 
 .block {
@@ -272,6 +277,25 @@ button {
   margin-left: 2vw;
 }
 
+.navbar-brand p {
+  font-size: 2rem !important;
+  color: #062a35 !important;
+  text-decoration: none !important;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+nav .icon-rectangle:hover i {
+  color: white !important;
+}
+
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -298,8 +322,6 @@ button {
   flex-basis: 50%;
   flex-grow: 2;
   align-items: center;
-}
-.navbar-collapse {
   margin-left: 4vw;
 }
 
@@ -343,6 +365,11 @@ footer {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 1rem;
+}
+
+footer a {
+  color: #94a7b5 !important;
 }
 
 footer .logo-dark-bg {
@@ -353,6 +380,12 @@ footer .logo-dark-bg {
   display: flex !important;
   justify-content: center !important;
   justify-content: space-between !important;
+}
+
+.navbar-brand p, .footer-logo p {
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .footer-text {
@@ -614,6 +647,7 @@ form.footer-input button {
   line-height: normal;
   margin-top: 20px;
   margin-bottom: 20px;
+  color: #062a35;
 }
 
 form.home-top-input::after {
@@ -1231,6 +1265,7 @@ form.home-top-input button {
   margin-right: 10%; 
   margin-top: 10%; 
   padding-bottom: 3rem;
+  color: #062a35 !important;
 }
 
 .instructor-course-bottom h4 {
@@ -1670,13 +1705,12 @@ form.home-top-input button {
 
 .dropup-content {
   display: none !important;
-  float: right;
-  bottom: 12.45rem;
-  right: 0;
-  left: 1rem;
+  bottom: 1.8rem;
+  right: 1.5rem;
   z-index: 1;
-  position: relative;
+  position: absolute;
   overflow: hidden;
+  width: 2.5rem;
 }
 
 .dropup-content a {
@@ -2392,4 +2426,406 @@ form.home-top-input button {
 
 .page-top-info .pic-overlay h1 {
   margin-top: 10rem;
+}
+
+@media only screen and (max-width: 576px) {
+  [class*="column-flex-"] {
+    width: 100%;
+  }
+
+  .navbar-social {
+    display: none;
+  }
+
+  .mar-top-12 {
+    margin-top: 15% !important;
+  }
+
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  form.home-top-input input {
+    width: 80%;
+    height: 3rem;
+    margin-left: 2rem;
+  }
+
+  .info-box-line {
+    display: none;
+  }
+
+  .home-page-top p {
+    border: none !important;
+    text-align: center;
+  }
+
+  .home-page-top .fa-headset {
+    margin-left: 2rem;
+  }
+
+  .event-card-img-cover {
+    width: 100%;
+  }
+
+  .courses .column-flex-20 {
+    margin-bottom: 2rem;
+  }
+
+  #students-feedback {
+    display: none;
+  }
+
+  .card {
+    margin-left: 0 !important;
+  }
+
+  .gallery-column {
+    width: 50%;
+  }
+
+  .gallery {
+    margin-left: 0;
+  }
+
+  .instructor-box {
+    margin-left: 0 !important;
+    margin-bottom: 5%;
+  }
+
+  .blogs {
+    margin: 0;
+  }
+
+  .blogs .column-flex-25 {
+    margin-bottom: 5%;
+  }
+
+  .career-box {
+    margin-top: 5%;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  .sponsors-items img {
+    margin-left: 15%;
+  }
+
+  #upcoming-events .column-flex-50 {
+    margin-left: 0 !important;
+    margin-bottom: 5%;
+  }
+
+  .event-card-img-cover img {
+    width: inherit !important;
+  }
+
+  .card-price {
+    margin-left: 16rem;
+  }
+
+  .event-info {
+    margin-top: 60% !important;
+  }
+
+  .blogs-list {
+    margin-left: 0 !important;
+  }
+
+  .side-panel {
+    display: none !important;
+  }
+
+  .event-info-line {
+    margin-top: 0 !important;
+  }
+
+  .blog-content {
+    margin-left: 0 !important;
+  }
+
+  .tags-share {
+    display: block !important;
+    float: none !important;
+  }
+
+  .blog-details-author {
+    margin-bottom: 5%;
+  }
+
+  .blog-details-author .row {
+    display: block;
+  }
+
+  .other-blogs {
+    display: none;
+  }
+
+  .content-flex {
+    display: block;
+  }
+
+  .event-buttons {
+    width: 100% !important;
+  }
+
+  .event-info-line {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100% !important;
+  }
+
+  .event-info-line span {
+    display: block;
+    text-align: center;
+  }
+
+  .event-information {
+    text-align: center;
+  }
+
+  .mapouter {
+    display: none !important;
+  }
+
+  .events-block {
+    display: block !important;
+  }
+
+  .events-block .row .event-card {
+    display: block;
+    width: 100%;
+  }
+
+  .about-info {
+    text-align: center;
+  }
+
+  .about-info .fa-stack {
+    bottom: 0 !important;
+    margin-top: 5%;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  [class*="mar-left"] {
+    margin-left: 0;
+  }
+
+  .career-bar {
+    display: none;
+  }
+
+  .instructors-content .column-flex-25 {
+    margin-left: 0 !important;
+    margin-bottom: 5%;
+  }
+
+  .instructors-block .column-flex-37-5 {
+    margin-left: 0 !important;
+    margin-bottom: 5% !important;
+  }
+}
+
+@media (max-width: 992px) and (min-width:576px) {
+  [class*="column-flex-"] {
+    width: 100%;
+  }
+
+  .navbar-social {
+    display: none;
+  }
+
+  .mar-top-12 {
+    margin-top: 15% !important;
+  }
+
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  form.home-top-input input {
+    width: 80%;
+    height: 3rem;
+    margin-left: 2rem;
+  }
+
+  .info-box-line {
+    display: none;
+  }
+
+  .home-page-top p {
+    border: none !important;
+    text-align: center;
+  }
+
+  .home-page-top .fa-headset {
+    margin-left: 2rem;
+  }
+
+  .event-card-img-cover {
+    width: 100%;
+  }
+
+  .courses .column-flex-20 {
+    margin-bottom: 2rem;
+  }
+
+  #students-feedback {
+    display: none;
+  }
+
+  .card {
+    margin-left: 0 !important;
+  }
+
+  .gallery-column {
+    width: 50%;
+  }
+
+  .gallery {
+    margin-left: 0;
+  }
+
+  .instructor-box {
+    margin-left: 0 !important;
+    margin-bottom: 5%;
+  }
+
+  .blogs {
+    margin: 0;
+  }
+
+  .blogs .column-flex-25 {
+    margin-bottom: 5%;
+  }
+
+  .career-box {
+    margin-top: 5%;
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  .sponsors-items img {
+    margin-left: 15%;
+  }
+
+  #upcoming-events .column-flex-50 {
+    margin-left: 0 !important;
+    margin-bottom: 5%;
+  }
+
+  .event-card-img-cover img {
+    width: inherit !important;
+  }
+
+  .card-price {
+    margin-left: 16rem;
+  }
+
+  .event-info {
+    margin-top: 60% !important;
+  }
+
+  .blogs-list {
+    margin-left: 0 !important;
+  }
+
+  .side-panel {
+    display: none !important;
+  }
+
+  .event-info-line {
+    margin-top: 0 !important;
+  }
+
+  .blog-content {
+    margin-left: 0 !important;
+  }
+
+  .tags-share {
+    display: block !important;
+    float: none !important;
+  }
+
+  .blog-details-author {
+    margin-bottom: 5%;
+  }
+
+  .blog-details-author .row {
+    display: block;
+  }
+
+  .other-blogs {
+    display: none;
+  }
+
+  .content-flex {
+    display: block;
+  }
+
+  .event-buttons {
+    width: 100% !important;
+  }
+
+  .event-info-line {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100% !important;
+  }
+
+  .event-info-line span {
+    display: block;
+    text-align: center;
+  }
+
+  .event-information {
+    text-align: center;
+  }
+
+  .mapouter {
+    display: none !important;
+  }
+
+  .events-block {
+    display: block !important;
+  }
+
+  .events-block .row .event-card {
+    display: block;
+    width: 100%;
+  }
+
+  .about-info {
+    text-align: center;
+  }
+
+  .about-info .fa-stack {
+    bottom: 0 !important;
+    margin-top: 5%;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  [class*="mar-left"] {
+    margin-left: 0;
+  }
+
+  .career-bar {
+    display: none;
+  }
+
+  .instructors-content .column-flex-25 {
+    margin-left: 0 !important;
+    margin-bottom: 5%;
+  }
+
+  .instructors-block .column-flex-37-5 {
+    margin-left: 0 !important;
+    margin-bottom: 5% !important;
+  }
 }

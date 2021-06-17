@@ -10,17 +10,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="/css/base.css">
-    <script src="/js/simplelightbox-2.7.3/dist/simple-lightbox.js"></script>
     <link rel="stylesheet" href="/js/simplelightbox-2.7.3/dist/simple-lightbox.css">
+    <script src="/js/simplelightbox-2.7.3/dist/simple-lightbox.js"></script>
+    <script src="/js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/239fe5ee7d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <script src="https://kit.fontawesome.com/239fe5ee7d.js" crossorigin="anonymous"></script>
-
     <div class="home-page-top">
         <nav class="navbar navbar-main-page navbar-expand-lg" style="background-color: transparent;">
-            <a class="navbar-brand">    
+            <a class="navbar-brand" href="home.html">    
                 <img class="logo-img" src="/pics/eduplus-logo.png" />
-                <b class="boldness-900">Edu</b>Plus
+                <p>
+                    <b class="boldness-900">Edu</b>Plus
+                </p>
             </a>
             
             <div class="collapse navbar-collapse">
@@ -48,8 +50,10 @@
                     </div>
                 </a>
                 <div class="icon-rectangle">
-                    <i class="icon icon-navbar far fa-user-circle"></i>
-                    <b class="icon-text boldness-900">SIGN IN</b>
+                    <button>
+                        <i class="icon-navbar far fa-user-circle"></i>
+                        <b class="boldness-900">SIGN IN</b>
+                    </button>
                 </div>
             </div>
         </nav>
@@ -120,10 +124,10 @@
             <p>Active courses</p>
         </div>
     </div>
-    <div class="page-content white-bg-color padding-0">
+    <div class="page-content white-bg-color" style="padding-bottom: 6rem; padding-top: 0;">
         <div class="block">
             <!-- courses part -->
-            <div id="#course-categories" class="text-align-center">
+            <div id="course-categories" class="text-align-center">
                 <div class="row">
                     <div class="block content-block" style="margin-top: 5%;">
                         <div class="subtitle">
@@ -140,7 +144,7 @@
                             </div>
                         </div>
                         <h2>Course Categories</h2>
-                        <div>
+                        <div class="courses">
                             <div class="column-flex-20 display-inline-block" style="border: 1px solid #e2e2e2;">
                                 <div class="course-image">
                                     <div class="event-card-img-cover">
@@ -202,7 +206,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="margin-top: 0.5rem; padding-bottom: 6rem;">
+                        <div style="margin-top: 0.5rem;">
                             <div class="column-flex-20 display-inline-block" style="border: 1px solid #e2e2e2;">
                                 <div class="course-image">
                                     <div class="event-card-img-cover">
@@ -272,7 +276,7 @@
     <div class="page-content dark-cyan-bg-color">
         <div class="block">
             <!-- available courses part -->
-            <div id="#available-courses">
+            <div id="available-courses">
                 <div class="subtitle text-align-center">
                     <div class="subtitle-squares orange-color">
                         <i class="fas fa-square-full"></i>
@@ -493,7 +497,7 @@
     <div class="page-content white-bg-color">
         <div class="block">
             <!-- campus gallery -->
-            <div id="#campus-gallery">
+            <div id="campus-gallery">
                 <div class="subtitle text-align-center">
                     <div class="subtitle-squares orange-color">
                         <i class="fas fa-square-full"></i>
@@ -587,7 +591,7 @@
     <div class="page-content light-cyan-bg-color">
         <div class="block">
             <!-- instructors -->
-            <div id="#expert-instructors">
+            <div id="expert-instructors">
                 <div class="subtitle text-align-center">
                     <div class="subtitle-squares orange-color">
                         <i class="fas fa-square-full"></i>
@@ -758,7 +762,7 @@
     <div class="page-content white-bg-color">
         <div class="block">
             <!-- latest events -->
-            <div id="#upcoming-events">
+            <div id="upcoming-events">
                 <div class="subtitle text-align-center">
                     <div class="subtitle-squares orange-color">
                         <i class="fas fa-square-full"></i>
@@ -845,10 +849,10 @@
             </div>
         </div>
     </div>
-    <div class="page-content dark-gray-bg-color">
+    <div class="page-content dark-gray-bg-color" id="students-feedback">
         <div class="block">
             <!-- students feedback -->
-            <div id="#students-feedback">
+            <div>
                 <div class="subtitle text-align-center white-color">
                     <div class="subtitle-squares">
                         <i class="fas fa-square-full"></i>
@@ -892,7 +896,9 @@
                                 </div>
                                 <div class="feedback-content" id="paul">
                                     <p class="feedback-main-text">
-                                        adasdasdasdasdgggggggggggggggggggggg
+                                        Fusce nibh urna, pharetra non imperdiet aliquet, posuere blandit felis. Nulla id tellus at nisl sagittis tempor. 
+                                        Vivamus in risus rhoncus felis efficitur vehicula eu eu lacus. In et est sapien. Etiam fermentum sollicitudin scelerisque. 
+                                        Sed pharetra massa lectus, sit amet varius odio fermentum nec. 
                                     </p>
                                     <p class="feedback-secondary-text">
                                         Quo fugit ea mollitia veniam, soluta, officiis hic consectetur esse consequuntur saepe repellat, pariatur accusamus cumque temporibus?
@@ -912,7 +918,7 @@
                                 </div>
                                 <div class="feedback-content" id="michele">
                                     <p class="feedback-main-text">
-                                        ffffffffffffffffffffffffff
+                                        Nulla id fringilla nunc. Vestibulum finibus ligula augue, id commodo elit hendrerit vitae. Sed eu enim eu est vulputate semper eget ut tortor. 
                                     </p>
                                     <p class="feedback-secondary-text">
                                         Quo fugit ea mollitia veniam, soluta, officiis hic consectetur esse consequuntur saepe repellat, pariatur accusamus cumque temporibus?
@@ -947,7 +953,7 @@
     <div class="page-content light-cyan-bg-color">
         <div class="block">
             <!-- career -->
-            <div id="#build-a-career" class="row">
+            <div id="build-a-career" class="row">
                 <div class="column-flex-50">
                     <img src="/pics/instructors/instructor-2.jpg" style="width: 75%; height: auto; position: relative;"/>
                     <img src="/pics/gallery/pic-1.jpg" style="width: 50%; height: auto; position: relative; margin-top: -10rem; margin-left: 15rem;"/>
@@ -986,7 +992,7 @@
     <div class="page-content white-bg-color">
         <div class="block">
             <!-- news & blog -->
-            <div id="#news-and-blog">
+            <div id="news-and-blog">
                 <div class="subtitle text-align-center">
                     <div class="subtitle-squares orange-color">
                         <i class="fas fa-square-full"></i>
@@ -1072,133 +1078,39 @@
             <img src="/pics/sponsors/03.png"/>        
         </div>
     </div>
-    
-    <script>
-        new SimpleLightbox('.gallery a');
-
-        filterCategories("all")
-        function filterCategories(c) {
-            var x, i;
-            x = document.getElementsByClassName("gallery-column");
-            if (c == "all") c = "";
-            for (i = 0; i < x.length; i++) {
-                removeClass(x[i], "display-block");
-                if (x[i].className.indexOf(c) > -1) addClass(x[i], "display-block");
-            }
-        }
-
-        function addClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-            }
-        }
-
-        function removeClass(element, name) {
-            var i, arr1, arr2;
-            arr1 = element.className.split(" ");
-            arr2 = name.split(" ");
-            for (i = 0; i < arr2.length; i++) {
-                while (arr1.indexOf(arr2[i]) > -1) {
-                arr1.splice(arr1.indexOf(arr2[i]), 1);     
-                }
-            }
-            element.className = arr1.join(" ");
-        }
-
-
-        var btnContainer = document.getElementById("galleryCategories");
-        var btns = btnContainer.getElementsByClassName("category-button");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function(){
-                var current = document.getElementsByClassName("category-active");
-                current[0].className = current[0].className.replace(" category-active", "");
-                this.className += " category-active";
-            });
-        }
-
-        function scrollToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-
-        var current_feedback = 0;
-        
-        var feedbackPics = document.getElementById("feedbackPics");
-        var feedbacks = feedbackPics.getElementsByClassName("feedback-pic");
-        var feedbackContents = document.getElementsByClassName("feedback-content");
-
-        changeToComment(0);
-
-        function prevComment() {
-            if (current_feedback > 0) {
-                removeClassesFromComments(current_feedback)
-                current_feedback--;
-                changeToComment(current_feedback)
-            }
-        }
-
-        function nextComment() {
-            if (current_feedback < feedbacks.length - 1) {
-                removeClassesFromComments(current_feedback)
-                current_feedback++;
-                changeToComment(current_feedback)
-            }
-        }
-
-        function changeToComment(comment_number) {
-            if (comment_number != current_feedback) {
-                removeClassesFromComments(current_feedback)
-                current_feedback = comment_number;
-            }
-
-            addClassesToComments(comment_number);
-        }
-
-        function removeClassesFromComments(from_comment) {
-            removeClass(feedbacks[from_comment], "feedback-pic-active");
-            removeClass(feedbackContents[feedbacks[from_comment].id], "display-block");
-        }
-
-        function addClassesToComments(to_comment) {
-            addClass(feedbacks[to_comment], "feedback-pic-active");
-            addClass(feedbackContents[feedbacks[to_comment].id], "display-block");
-        }
-
-    </script>
     <footer>
         <section class="footer-logo-section footer-border-bottom block">
             <div class="footer-logo footer-social-padding" style="display: inline-block;">
-                <a class="logo-dark-bg footer-social-padding" href="home.html">    
+                <a class="logo-dark-bg footer-social-padding white-color" href="home.html">    
                     <img class="logo-img" src="/pics/eduplus-logo-dark-bg.png" />
-                    <b class="boldness-900">Edu</b>Plus
+                    <p>
+                        <b class="boldness-900">Edu</b>Plus
+                    </p>
                 </a>
             </div>
             <div class="display-table footer-social footer-social-padding">
-                <a class="boldness-600 footer-social-item-padding footer-social-item" href="https://www.facebook.com/">
+                <a class="boldness-600 footer-social-item-padding footer-social-item white-color" href="https://www.facebook.com/">
                     <span class="fa-stack fa-1x">
                         <i class="footer-fb fa fa-circle fa-stack-2x fb-bg"></i>
                         <i class="icon-footer fab fa-facebook-f fa-stack-1x"></i>
                     </span>
                     Facebook
                 </a>
-                <a class="boldness-600 footer-social-item-padding footer-social-item" href="https://www.twitter.com/">
+                <a class="boldness-600 footer-social-item-padding footer-social-item white-color" href="https://www.twitter.com/">
                     <span class="fa-stack fa-1x">
                         <i class="footer-twitter fa fa-circle fa-stack-2x twitter-bg"></i>
                         <i class="icon-footer fab fa-twitter fa-stack-1x"></i>
                     </span>
                     Twitter
                 </a>
-                <a class="boldness-600 footer-social-item-padding footer-social-item" href="https://www.youtube.com/">
+                <a class="boldness-600 footer-social-item-padding footer-social-item white-color" href="https://www.youtube.com/">
                     <span class="fa-stack fa-1x">
                         <i class="footer-yt fa fa-circle fa-stack-2x yt-bg"></i>
                         <i class="icon-footer fab fa-youtube fa-stack-1x"></i>
                     </span>
                     Youtube
                 </a>
-                <a class="boldness-600 footer-social-item-padding footer-social-item" href="https://www.instagram.com/">
+                <a class="boldness-600 footer-social-item-padding footer-social-item white-color" href="https://www.instagram.com/">
                     <span class="fa-stack fa-1x">
                         <i class="footer-ig fa fa-circle fa-stack-2x ig-bg"></i>
                         <i class="icon-footer fab fa-instagram fa-stack-1x"></i>
@@ -1214,23 +1126,18 @@
             <div class="row mar-top">
                 <div class="column-flex-1 mar-sides-auto mar-bottom">
                     <h6 class="footer-heading">Our Courses</h6>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Web Development</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Business Studies</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Computer Engineering</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>English Learning</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Graphics Design</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Color Combinations</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Software Development</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Photography</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Advance WordPress</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Graphics Design</a></p>
+                    <a href="/html/courses-details.html"><p class="footer-item"><i class="fas fa-circle"></i>Web Development</p></a>
+                    <a href="/html/courses-details.html"><p class="footer-item"><i class="fas fa-circle"></i>Business Studies</p></a>
+                    <a href="/html/courses-details.html"><p class="footer-item"><i class="fas fa-circle"></i>Computer Engineering</p></a>
+                    <a href="/html/courses-details.html"><p class="footer-item"><i class="fas fa-circle"></i>English Learning</p></a>
+                    <a href="/html/courses-details.html"><p class="footer-item"><i class="fas fa-circle"></i>Software Development</p></a>
                 </div>
                 <div class="column-flex-1 mar-sides-auto mar-bottom">
                     <h6 class="footer-heading">Company</h6>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>About EduPlus</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Instructors</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Career</a></p>
-                    <p class="footer-item"><i class="fas fa-circle"></i><a>Courses</a></p>
+                    <a href="/html/about.html"><p class="footer-item"><i class="fas fa-circle"></i>About EduPlus</p></a>
+                    <a href="/html/instructors.html"><p class="footer-item"><i class="fas fa-circle"></i>Instructors</p></a>
+                    <a href="/html/contact-us.html"><p class="footer-item"><i class="fas fa-circle"></i>Career</p></a>
+                    <a href="/html/courses.html"><p class="footer-item"><i class="fas fa-circle"></i>Courses</p></a>
                 </div>
                 <div class="column-flex-2 mar-sides-auto mar-bottom">
                     <h6 class="footer-heading">Newsletters</h6>
@@ -1248,8 +1155,15 @@
                 Copyright @ 2021 <a href="home.html">EduPlus</a>. All Rights Reserved.</p>
             </div>
         </section>
-        <br>
     </footer>
     <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+    <script>
+        window.addEventListener("load", function() {
+            new SimpleLightbox('.gallery a');
+
+            filterCategories("all");
+            changeToComment(0);
+        });
+    </script>
 </body>
 </html>
